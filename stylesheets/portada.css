@@ -1,5 +1,5 @@
 #myVideo {
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -40,5 +40,15 @@
   text-justify: auto;
   text-align: center;
 }
+
+#descripcion-juego{
+  color: rgb(255, 255, 255);
+}
+
+#Menu-Navegacion{
+  padding: auto 100%;
+}
+
+
 
 

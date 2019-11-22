@@ -15,26 +15,49 @@
   </head>
   
   <body>
-    <!--CONTENEDORES PARA LOGO DE JUEGOS Y SUBAPARTADOS-->
-    <div class="container-fluid slider d-flex align-items-center"> 
-          <!--FONDO DE VIDEO-->
-      <video autoplay muted loop id="myVideo">
+
+    <!--FONDO DE VIDEO-->
+    <video autoplay muted loop id="myVideo">
         <source src="assets/videos/eSports Montage.mp4" type="video/mp4">
       </video>
+    <!-- MENU DE NAVEGACION -->
+    <div class="row">
+      <div class="container-fluid">
+        <nav class="navbar navbar-dark bg-dark" id="Menu-Navegacion">
+            <span class="navbar-text">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ducimus.
+            </span>
+        </nav>
+      </div>
+    </div>
+
+    <!--CONTENEDOR CENTRAL INICIO-->
+    <div class="container-fluid">
       <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 align-self-center">
-            <div class="container">
-              <img src="assets/images/LOL.png" class="img-fluid cente" width="88%" alt="League of Legends"> 
-              <button id="boton-lol" href=#></button>
-            </div>
-          
-          </div>  
-          <div class="col-sm-12 col-md-12 col-lg-6 align-self-center">
-              <div class="container">
-                <img src="assets/images/OW.png" class="img-fluid">
-                <button id="boton-ow" href=#></button>
+        <!--CONTENEDORES PARA LOGO DE JUEGOS Y SUBAPARTADOS CENTRADO-->
+        <div class="container-fluid slider d-flex align-items-center"> 
+          <!--CONTENEDORES JUEGOS-->
+          <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-6 align-self-center">
+                <div class="container">
+                  <div class="container">
+                    <img src="assets/images/LOL.png" class="img-fluid cente" width="88%" alt="League of Legends"> 
+                    <button id="boton-lol" href=#></button>
+                  </div>
+                  <p id="descripcion-juego">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis placeat minus rerum itaque facilis molestias impedit voluptates, soluta, magnam quae, sunt quisquam aspernatur facere deleniti mollitia ex adipisci fuga fugiat?</p>
+                </div> 
+              </div>  
+              <div class="col-sm-12 col-md-12 col-lg-6 align-self-center">
+                  <div class="container">
+                    <div class="container">
+                      <img src="assets/images/OW.png" class="img-fluid">
+                      <button id="boton-ow" href=#></button>
+                    </div>
+                    <p id="descripcion-juego">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quisquam earum nemo accusamus esse, quibusdam repellendus quam. Molestiae ab unde at iste, minima laboriosam repudiandae sit repellat magnam odit eum.</p>  
+                  </div>
               </div>
           </div>
+        </div>
       </div>
     </div>
     <!-- Optional JavaScript -->
