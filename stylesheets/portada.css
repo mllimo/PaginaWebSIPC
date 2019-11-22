@@ -1,3 +1,16 @@
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.slider{
+  height: 100vh;
+  position: fixed;
+}
+
 #boton-lol{
   background: rgba(212, 208, 205, 0.521);
   position: absolute;
@@ -19,6 +32,5 @@
 .container {
   position: relative;
   text-align: center;
-  color: white;
 }
 

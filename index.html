@@ -13,33 +13,29 @@
 
     <title>E-SPORTS</title>
   </head>
-
-  <style>
-    .slider{
-      background-color: black ;
-      height: 100vh;
-      background-size: cover;
-      background-position: center;
-    }
-  </style>
   
   <body>
+    <!--FONDO DE VIDEO-->
+    <video autoplay muted loop id="myVideo">
+      <source src="assets/videos/eSports Montage.mp4" type="video/mp4">
+    </video>
+    <!--CONTENEDORES PARA LOGO DE JUEGOS Y SUBAPARTADOS-->
     <div class="container-fluid slider d-flex align-items-center"> 
       <div class="row">
-          <div class="col-sm-12 col-md-6 align-self-center bg-primary">
+          <div class="col-sm-12 col-md-6 align-self-center">
             <div class="container">
               <img src="assets/images/LOL.png" cxlass="img-fluid cente" width="88%" alt="League of Legends"> 
               <button id="boton-lol" href=#></button>
             </div>
           </div>  
-          <div class="col-sm-12 col-md-6 align-self-center bg-primary ">
+          <div class="col-sm-12 col-md-6 align-self-center">
               <div class="container">
                 <img src="assets/images/OW.png" class="img-fluid">
                 <button id="boton-ow" href=#></button>
               </div>
           </div>
       </div>
-    </div>  
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
