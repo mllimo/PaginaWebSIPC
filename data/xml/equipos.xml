@@ -154,14 +154,14 @@
                 <CREATED>14-03-2011</CREATED>
             </EQUIPO>
             <EQUIPO NAME="SPLYCE">
-                <LOCALITATION>EUROPE & UNITED STATES</LOCALITATION>
+                <LOCALITATION>EUROPE AND UNITED STATES</LOCALITATION>
                 <REGION>EUROPE</REGION>
                 <CREATED>29-10-2015</CREATED>
             </EQUIPO>
         </LEC>
         <LCS>
             <EQUIPO NAME="TEAM LIQUID">
-                <LOCALITATION>NETHERLANDS & UNITED STATES</LOCALITATION>
+                <LOCALITATION>NETHERLANDS AND UNITED STATES</LOCALITATION>
                 <REGION>NORTH AMERICA</REGION>
                 <CREATED>06-01-2015</CREATED>
             </EQUIPO>
@@ -207,7 +207,7 @@
         </VCS>
         <LLA>
             <EQUIPO NAME="ISURUS GAMING">
-                <LOCALITATION>ARGENTINA & CHILE</LOCALITATION>
+                <LOCALITATION>ARGENTINA AND CHILE</LOCALITATION>
                 <REGION>SHOUTH AMERICA</REGION>
                 <CREATED>04-09-2013</CREATED>
             </EQUIPO>
