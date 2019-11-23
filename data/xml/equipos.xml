@@ -1,230 +1,230 @@
 <?xml version="1.0" ?> 
 
 <EQUIPOS>
-    <OVERWATCH>                                     <!-- Equipos competitivos que pertenecen a la Overwatch League -->
-        <DIVATLANTICO>                              <!-- División que contiene a los equipos de la zona atlantica-->
-            <EQUIPO NAME="ATLANTA REIGN">                
-                <LOCALITATION>ATLANTA, GA</LOCALITATION>
-                <REGION>NORTH AMERICA</REGION> 
-                <CREATED>02-08-2018</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="BOSTON UPRISING">
-                <LOCALITATION>BOSTON, MC</LOCALITATION>
-                <REGION>NORTH AMERICA</REGION> 
-                <CREATED>12-07-2017</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="FLORIDA MAYHEM">
-                <LOCALITATION>FLORIDA</LOCALITATION>
-                <REGION>NORTH AMERICA</REGION>
-                <CREATED>12-07-2017</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="HOUSTON OUTLAWS">
-                <LOCALITATION>HOUSTON, TX</LOCALITATION>
-                <REGION>NORTH AMERICA</REGION>
-                <CREATED>20-09-2017</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="LONDON SPITFIRE">
-                <LOCALITATION>LONDON</LOCALITATION>
-                <REGION>EUROPE</REGION>
-                <CREATED>10-08-2017</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="NEW YORK EXCELSIOR">
-                <LOCALITATION>NEW YORK CITY, NY</LOCALITATION>
-                <REGION>NORTH AMERICA</REGION>
-                <CREATED>12-07-2017</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="PARIS ETERNAL">
-                <LOCALITATION>PARIS</LOCALITATION>
-                <REGION>EUROPE</REGION>
-                <CREATED>07-09-2018</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="PHILADELPHIA FUSION">
-                <LOCALITATION>PHILADELPHIA</LOCALITATION>
-                <REGION>NORTH AMERICA</REGION>
-                <CREATED>20-09-2017</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="TORONTO DEFIANT">
-                <LOCALITATION>TORONTO</LOCALITATION>
-                <REGION>NORTH AMERICA</REGION>
-                <CREATED>07-09-2018</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="WASHINGTON JUSTICE">
-                <LOCALITATION>WASHINGTON, DC</LOCALITATION>
-                <REGION>NORTH AMERICA</REGION>
-                <CREATED>07-09-2018</CREATED>
-            </EQUIPO>
-        </DIVATLANTICO>
-        <DIVPACIFICO>                                 <!-- División que contiene a los equipos de la zona del pacífico-->
-            <EQUIPO NAME="CHENGDU HUNTERS">
-                <LOCALITATION>CHINA, CHENGDÚ</LOCALITATION>
-                <REGION>CHINA</REGION>
-                <CREATED>07-09-2018</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="DALLAS FUEL">
-                <LOCALITATION>DALLAS, TX</LOCALITATION>
-                <REGION>NORTH AMERICA</REGION>
-                <CREATED>20-09-2017</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="GUANGZHOU CHARGE">
-                <LOCALITATION>CHINA, GUANGZHOU</LOCALITATION>
-                <REGION>CHINA</REGION>
-                <CREATED>02-08-2018</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="HANGZHOU SPARK">
-                <LOCALITATION>CHINA, HANGZHOU</LOCALITATION>
-                <REGION>CHINA</REGION>
-                <CREATED>07-09-2018</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="LOS ANGELES GLADIATORS">
-                <LOCALITATION>LOS ANGELES, CA</LOCALITATION>
-                <REGION>NORTH AMERICA</REGION>
-                <CREATED>10-08-2017</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="LOS ANGELES VALIANT">
-                <LOCALITATION>LOS ANGELES, CA</LOCALITATION>
-                <REGION>NORTH AMERICA</REGION>
-                <CREATED>12-07-2017</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="SAN FRANCISCO SHOCK">
-                <LOCALITATION>SAN FRANCISCO, CA</LOCALITATION>
-                <REGION>NORTH AMERICA</REGION>
-                <CREATED>12-07-2017</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="SEOUL DYNASTY">
-                <LOCALITATION>SEOUL, COREA DEL SUR</LOCALITATION>
-                <REGION>KOREA</REGION>
-                <CREATED>12-07-2017</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="SHANGHAI DRAGONS">
-                <LOCALITATION>CHINA, SHANGAI</LOCALITATION>
-                <REGION>CHINA</REGION>
-                <CREATED>12-07-2017</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="VANCOUVER TITANS">
-                <LOCALITATION>VANCOUVER</LOCALITATION>
-                <REGION>NORTH AMERICA</REGION>
-                <CREATED>07-09-2018</CREATED>
-            </EQUIPO>
-        </DIVPACIFICO>      
-    </OVERWATCH>
-    <LEGUEOFLEGENDS>                                <!-- Equipos competitivos que pertenecen a la League of Legends League -->   
-        <LPL>
-            <EQUIPO NAME="FUNPLUS PHOENIX">
-                <LOCALITATION>CHINA</LOCALITATION>
-                <REGION>CHINA</REGION>
-                <CREATED>21-12-2017</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="ROYAL NEVER GIVE UP">
-                <LOCALITATION>CHINA, BEIJING</LOCALITATION>
-                <REGION>CHINA</REGION>
-                <CREATED>16-05-2015</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="INVICTUS GAMING">
-                <LOCALITATION>CHINA</LOCALITATION>
-                <REGION>CHINA</REGION>
-                <CREATED>02-08-2011</CREATED>
-            </EQUIPO>
-        </LPL>
-        <LCK>
-            <EQUIPO NAME="SKT">
-                <LOCALITATION>SEOUL, KOREA</LOCALITATION>
-                <REGION>KOREA</REGION>
-                <CREATED>15-02-2014</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="GRIFFIN">
-                <LOCALITATION>SEOUL, KOREA</LOCALITATION>
-                <REGION>KOREA</REGION>
-                <CREATED>10-01-2017</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="DAMWON GAMING">
-                <LOCALITATION>KOREA</LOCALITATION>
-                <REGION>KOREA</REGION>
-                <CREATED>28-05-2017</CREATED>
-            </EQUIPO>
-        </LCK>
-        <LEC>
-            <EQUIPO NAME="G2 ESPORTS">
-                <LOCALITATION>SPAIN, EUROPE</LOCALITATION>
-                <REGION>EUROPE</REGION>
-                <CREATED>24-02-2014</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="FNATIC">
-                <LOCALITATION>LONDON, EUROPE</LOCALITATION>
-                <REGION>EUROPE</REGION>
-                <CREATED>14-03-2011</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="SPLYCE">
-                <LOCALITATION>EUROPE AND UNITED STATES</LOCALITATION>
-                <REGION>EUROPE</REGION>
-                <CREATED>29-10-2015</CREATED>
-            </EQUIPO>
-        </LEC>
-        <LCS>
-            <EQUIPO NAME="TEAM LIQUID">
-                <LOCALITATION>NETHERLANDS AND UNITED STATES</LOCALITATION>
-                <REGION>NORTH AMERICA</REGION>
-                <CREATED>06-01-2015</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="CLOUD9">
-                <LOCALITATION>UNITED STATES</LOCALITATION>
-                <REGION>NORTH AMERICA</REGION>
-                <CREATED>08-01-2013</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="CLUTCH GAMING">
-                <LOCALITATION>UNITED STATES</LOCALITATION>
-                <REGION>NORTH AMERICA</REGION>
-                <CREATED>20-11-2017</CREATED>
-            </EQUIPO>
-        </LCS>
-        <LMS>
-            <EQUIPO NAME="J TEAM">
-                <LOCALITATION>TAIWAN</LOCALITATION>
-                <REGION>TAIWAN</REGION>
-                <CREATED>19-04-2016</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="AHQ E-SPORTS CLUB">
-                <LOCALITATION>TAIWAN</LOCALITATION>
-                <REGION>TAIWAN</REGION>
-                <CREATED>21-09-2012</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="HONG-KONG ATTITUDE">
-                <LOCALITATION>HONG KONG</LOCALITATION>
-                <REGION>TAIWAN</REGION>
-                <CREATED>22-03-2013</CREATED>
-            </EQUIPO>
-        </LMS>
-        <VCS>
-            <EQUIPO NAME="GAM ESPORTS">
-                <LOCALITATION>VIETNAM</LOCALITATION>
-                <REGION>VIETNAM</REGION>
-                <CREATED>19-12-2016</CREATED>
-            </EQUIPO>
-            <EQUIPO NAME="LOWKEY ESPORTS">
-                <LOCALITATION>NORTH AMERICA</LOCALITATION>
-                <REGION>VIETNAM</REGION>
-                <CREATED>02-06-2019</CREATED>
-            </EQUIPO>
-        </VCS>
-        <LLA>
-            <EQUIPO NAME="ISURUS GAMING">
-                <LOCALITATION>ARGENTINA AND CHILE</LOCALITATION>
-                <REGION>SHOUTH AMERICA</REGION>
-                <CREATED>04-09-2013</CREATED>
-            </EQUIPO>
-        </LLA>
-        <OPL>
-            <EQUIPO NAME="MAMMOTH">
-                <LOCALITATION>AUSTRALIA</LOCALITATION>
-                <REGION>OCEANIA</REGION>
-                <CREATED>09-05-2018</CREATED>
-            </EQUIPO>
-        </OPL>
-        <TCL>
-            <EQUIPO NAME="ROYAL YOUTH">
-                <LOCALITATION>TURKEY</LOCALITATION>
-                <REGION>TURKEY</REGION>
-                <CREATED>01-06-2016</CREATED>
-            </EQUIPO>
-        </TCL>
-    </LEGUEOFLEGENDS>
+  <OVERWATCH>                           <!-- Equipos competitivos que pertenecen a la Overwatch League -->
+    <DIVATLANTICO>                              <!-- División que contiene a los equipos de la zona atlantica-->
+      <EQUIPO NAME="ATLANTA REIGN">                
+        <LOCALITATION>ATLANTA, GA</LOCALITATION>
+        <REGION>NORTH AMERICA</REGION> 
+        <CREATED>02-08-2018</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="BOSTON UPRISING">
+        <LOCALITATION>BOSTON, MC</LOCALITATION>
+        <REGION>NORTH AMERICA</REGION> 
+        <CREATED>12-07-2017</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="FLORIDA MAYHEM">
+        <LOCALITATION>FLORIDA</LOCALITATION>
+        <REGION>NORTH AMERICA</REGION>
+        <CREATED>12-07-2017</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="HOUSTON OUTLAWS">
+        <LOCALITATION>HOUSTON, TX</LOCALITATION>
+        <REGION>NORTH AMERICA</REGION>
+        <CREATED>20-09-2017</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="LONDON SPITFIRE">
+        <LOCALITATION>LONDON</LOCALITATION>
+        <REGION>EUROPE</REGION>
+        <CREATED>10-08-2017</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="NEW YORK EXCELSIOR">
+        <LOCALITATION>NEW YORK CITY, NY</LOCALITATION>
+        <REGION>NORTH AMERICA</REGION>
+        <CREATED>12-07-2017</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="PARIS ETERNAL">
+        <LOCALITATION>PARIS</LOCALITATION>
+        <REGION>EUROPE</REGION>
+        <CREATED>07-09-2018</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="PHILADELPHIA FUSION">
+        <LOCALITATION>PHILADELPHIA</LOCALITATION>
+        <REGION>NORTH AMERICA</REGION>
+        <CREATED>20-09-2017</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="TORONTO DEFIANT">
+        <LOCALITATION>TORONTO</LOCALITATION>
+        <REGION>NORTH AMERICA</REGION>
+        <CREATED>07-09-2018</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="WASHINGTON JUSTICE">
+        <LOCALITATION>WASHINGTON, DC</LOCALITATION>
+        <REGION>NORTH AMERICA</REGION>
+        <CREATED>07-09-2018</CREATED>
+      </EQUIPO>
+    </DIVATLANTICO>                               <!-- Aqui terminan los equipos de la zona del atlantico-->
+    <DIVPACIFICO>                                 <!-- División que contiene a los equipos de la zona del pacífico -->
+      <EQUIPO NAME="CHENGDU HUNTERS">
+        <LOCALITATION>CHINA, CHENGDÚ</LOCALITATION>
+        <REGION>CHINA</REGION>
+        <CREATED>07-09-2018</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="DALLAS FUEL">
+        <LOCALITATION>DALLAS, TX</LOCALITATION>
+        <REGION>NORTH AMERICA</REGION>
+        <CREATED>20-09-2017</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="GUANGZHOU CHARGE">
+        <LOCALITATION>CHINA, GUANGZHOU</LOCALITATION>
+        <REGION>CHINA</REGION>
+        <CREATED>02-08-2018</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="HANGZHOU SPARK">
+        <LOCALITATION>CHINA, HANGZHOU</LOCALITATION>
+        <REGION>CHINA</REGION>
+        <CREATED>07-09-2018</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="LOS ANGELES GLADIATORS">
+        <LOCALITATION>LOS ANGELES, CA</LOCALITATION>
+        <REGION>NORTH AMERICA</REGION>
+        <CREATED>10-08-2017</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="LOS ANGELES VALIANT">
+        <LOCALITATION>LOS ANGELES, CA</LOCALITATION>
+        <REGION>NORTH AMERICA</REGION>
+        <CREATED>12-07-2017</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="SAN FRANCISCO SHOCK">
+        <LOCALITATION>SAN FRANCISCO, CA</LOCALITATION>
+        <REGION>NORTH AMERICA</REGION>
+        <CREATED>12-07-2017</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="SEOUL DYNASTY">
+        <LOCALITATION>SEOUL, COREA DEL SUR</LOCALITATION>
+        <REGION>KOREA</REGION>
+        <CREATED>12-07-2017</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="SHANGHAI DRAGONS">
+        <LOCALITATION>CHINA, SHANGAI</LOCALITATION>
+        <REGION>CHINA</REGION>
+        <CREATED>12-07-2017</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="VANCOUVER TITANS">
+        <LOCALITATION>VANCOUVER</LOCALITATION>
+        <REGION>NORTH AMERICA</REGION>
+        <CREATED>07-09-2018</CREATED>
+      </EQUIPO>
+    </DIVPACIFICO>                                  <!-- Aqui terminan los equipos de la zona del pacífico-->
+  </OVERWATCH>                                <!-- Cierre de los competitivos que pertenecen a la Overwatch League -->
+  <LEGUEOFLEGENDS>                            <!-- Equipos competitivos que pertenecen a la League of Legends League -->   
+    <LPL>                                           <!-- Equipos de la región de China -->                                     
+      <EQUIPO NAME="FUNPLUS PHOENIX">
+        <LOCALITATION>CHINA</LOCALITATION>
+        <REGION>CHINA</REGION>
+        <CREATED>21-12-2017</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="ROYAL NEVER GIVE UP">
+        <LOCALITATION>CHINA, BEIJING</LOCALITATION>
+        <REGION>CHINA</REGION>
+        <CREATED>16-05-2015</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="INVICTUS GAMING">
+        <LOCALITATION>CHINA</LOCALITATION>
+        <REGION>CHINA</REGION>
+        <CREATED>02-08-2011</CREATED>
+      </EQUIPO>
+    </LPL>                                          <!-- Fin de los equipos de la región de China -->
+    <LCK>                                           <!-- Equipos de la región de Corea -->
+      <EQUIPO NAME="SKT">
+        <LOCALITATION>SEOUL, KOREA</LOCALITATION>
+        <REGION>KOREA</REGION>
+        <CREATED>15-02-2014</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="GRIFFIN">
+        <LOCALITATION>SEOUL, KOREA</LOCALITATION>
+        <REGION>KOREA</REGION>
+        <CREATED>10-01-2017</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="DAMWON GAMING">
+        <LOCALITATION>KOREA</LOCALITATION>
+        <REGION>KOREA</REGION>
+        <CREATED>28-05-2017</CREATED>
+      </EQUIPO>           
+    </LCK>                                          <!-- Fin de los equipos de la región de Corea -->                                         
+    <LEC>                                           <!-- Equipos de la región de Europa -->
+      <EQUIPO NAME="G2 ESPORTS">
+        <LOCALITATION>SPAIN, EUROPE</LOCALITATION>
+        <REGION>EUROPE</REGION>
+        <CREATED>24-02-2014</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="FNATIC">
+        <LOCALITATION>LONDON, EUROPE</LOCALITATION>
+        <REGION>EUROPE</REGION>
+        <CREATED>14-03-2011</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="SPLYCE">
+        <LOCALITATION>EUROPE AND UNITED STATES</LOCALITATION>
+        <REGION>EUROPE</REGION>
+        <CREATED>29-10-2015</CREATED>
+      </EQUIPO>
+    </LEC>                                          <!-- Fin de los equipos de la región de Europa -->
+    <LCS>                                           <!-- Equipos de la región de Norte América -->
+      <EQUIPO NAME="TEAM LIQUID">
+        <LOCALITATION>NETHERLANDS AND UNITED STATES</LOCALITATION>
+        <REGION>NORTH AMERICA</REGION>
+        <CREATED>06-01-2015</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="CLOUD9">
+        <LOCALITATION>UNITED STATES</LOCALITATION>
+        <REGION>NORTH AMERICA</REGION>
+        <CREATED>08-01-2013</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="CLUTCH GAMING">
+        <LOCALITATION>UNITED STATES</LOCALITATION>
+        <REGION>NORTH AMERICA</REGION>
+        <CREATED>20-11-2017</CREATED>
+      </EQUIPO>
+    </LCS>                                          <!-- Fin de los equipos de la región de Norte América -->
+    <LMS>                                           <!-- Equipos de la región de Taiwan, Macao y Hong Kong -->
+      <EQUIPO NAME="J TEAM">
+        <LOCALITATION>TAIWAN</LOCALITATION>
+        <REGION>TAIWAN</REGION>
+        <CREATED>19-04-2016</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="AHQ E-SPORTS CLUB">
+        <LOCALITATION>TAIWAN</LOCALITATION>
+        <REGION>TAIWAN</REGION>
+        <CREATED>21-09-2012</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="HONG-KONG ATTITUDE">
+        <LOCALITATION>HONG KONG</LOCALITATION>
+        <REGION>TAIWAN</REGION>
+        <CREATED>22-03-2013</CREATED>
+      </EQUIPO>
+    </LMS>                                         <!-- Fin de los equipos de la región de Taiwan, Macao y Hong Kong -->
+    <VCS>                                          <!-- Equipos de la región de  Vietnam -->
+      <EQUIPO NAME="GAM ESPORTS">
+        <LOCALITATION>VIETNAM</LOCALITATION>
+        <REGION>VIETNAM</REGION>
+        <CREATED>19-12-2016</CREATED>
+      </EQUIPO>
+      <EQUIPO NAME="LOWKEY ESPORTS">
+        <LOCALITATION>NORTH AMERICA</LOCALITATION>
+        <REGION>VIETNAM</REGION>
+        <CREATED>02-06-2019</CREATED>
+      </EQUIPO>
+    </VCS>                                         <!-- Fin de los equipos de la región Vietnam  -->
+    <LLA>                                          <!-- Equipos de la región de  Latinoamérica -->
+      <EQUIPO NAME="ISURUS GAMING">
+        <LOCALITATION>ARGENTINA AND CHILE</LOCALITATION>
+        <REGION>SHOUTH AMERICA</REGION>
+        <CREATED>04-09-2013</CREATED>
+      </EQUIPO>
+    </LLA>                                         <!-- Fin de los equipos de la región de Latinoamérica  -->
+    <OPL>                                          <!-- Equipos de la región de  Oceanía -->
+      <EQUIPO NAME="MAMMOTH">
+        <LOCALITATION>AUSTRALIA</LOCALITATION>
+        <REGION>OCEANIA</REGION>
+        <CREATED>09-05-2018</CREATED>
+      </EQUIPO>
+    </OPL>                                         <!-- Fin de los equipos de la región de Oceanía  -->
+    <TCL>                                          <!-- Equipos de la región de  Turquía -->
+      <EQUIPO NAME="ROYAL YOUTH">
+        <LOCALITATION>TURKEY</LOCALITATION>
+        <REGION>TURKEY</REGION>
+        <CREATED>01-06-2016</CREATED>
+      </EQUIPO>
+    </TCL>                                        <!-- Fin de los equipos de la región de Turquía  -->
+  </LEGUEOFLEGENDS>               <!-- Cierre de los competitivos que pertenecen a la League of Legends League -->
 </EQUIPOS>
