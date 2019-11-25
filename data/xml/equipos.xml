@@ -1,5 +1,5 @@
 <?xml version="1.0" ?> 
-
+<?xml-stylesheet type="text/xsl" href="filtro_equipos.xsl" ?>
 <EQUIPOS>
   <OVERWATCH>                           <!-- Equipos competitivos que pertenecen a la Overwatch League -->
     <DIVATLANTICO>                              <!-- División que contiene a los equipos de la zona atlantica-->
