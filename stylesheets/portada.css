@@ -12,21 +12,23 @@
 }
 
 #boton-lol{
-  background: rgba(212, 208, 205, 0.521);
+  background: transparent;
+  border: none;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 12% 37%;
+  padding: 17% 45%;
 }
 
 #boton-ow{
-  background: rgba(212, 208, 205, 0.521);
+  background: transparent;
+  border: none;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 17% 40%;
+  padding: 17% 45%;
 }
 
 .container {
@@ -45,9 +47,6 @@
   color: rgb(255, 255, 255);
 }
 
-#Menu-Navegacion{
-  padding: auto 100%;
-}
 
 
 
