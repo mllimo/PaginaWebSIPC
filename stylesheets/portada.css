@@ -8,7 +8,7 @@
 
 .slider{
   height: 100vh;
-  position: fixed;
+  position: static;
 }
 
 #boton-lol{
@@ -31,14 +31,9 @@
   padding: 17% 45%;
 }
 
-.container {
-  position: relative;
-  text-align: center;
-}
-
 .descripcion-logo{
   color: aqua;
-  position: relative;
+  position: static;
   text-justify: auto;
   text-align: center;
 }
@@ -46,6 +41,8 @@
 #descripcion-juego{
   color: rgb(255, 255, 255);
 }
+
+
 
 
 
