@@ -2,6 +2,11 @@ body {
   background: #212121;
 }
 
+h2,
+h4 {
+  font-size: 50px;
+}
+
 #myVideo {
   position: absolute;
   right: 0;
@@ -15,17 +20,7 @@ body {
   position: static;
 }
 
-#boton-lol {
-  background: transparent;
-  border: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 17% 45%;
-}
-
-#boton-ow {
+#boton-lol, #boton-ow  {
   background: transparent;
   border: none;
   position: absolute;
@@ -52,14 +47,6 @@ body {
   color: white;
   text-align: justify;
   position: static;
-}
-
-h2 {
-  font-size: 50px;
-}
-
-h4 {
-  font-size: 50px;
 }
 
 #titulo-icono {
