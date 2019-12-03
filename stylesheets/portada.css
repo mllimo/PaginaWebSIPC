@@ -44,10 +44,13 @@ body {
 
 #descripcion-juego {
   color: rgb(255, 255, 255);
+  background: #2121219f;
+  text-align: center;
 }
 
 #seccion-webdescrip {
   color: white;
+  text-align: justify;
   position: static;
 }
 
