@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="stylesheets/portada.css" />
 
   <!--SCRIPTS-->
+  <script src="/javascipt/jquery-3.4.1.min.js"></script>
   <script src="javascipt/portada.js"></script>
   <script src="javascipt/footer.js"></script>
 
@@ -129,56 +130,11 @@
   </section>
 
   <!-- Footer -->
-  <footer class="page-footer font-small bg-white indigo">
-    <!-- Footer Links -->
-    <div class="container">
-      <!-- Grid row-->
-      <div class="row text-center d-flex justify-content-center pt-5">
-        <div class="col-md-6">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!">Sobre nosotros</a>
-          </h6>
-        </div>
-        <!-- Grid row-->
-        <div class="col-md-6">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!">Contacto</a>
-          </h6>
-        </div>
-      </div>
+  <div id="Footer"></div>
+  <script>
+    $("#Footer" ).load( "/views/templates/footer.html" );
+  </script>
 
-      </br>
-      <hr>
-      </br>
-      <!-- Grid row-->
-      <div class="row pb-3 text-center d-flex justify-content-center">
-        <!-- Grid column -->
-        <div class="col-md-12">
-          <div class="mb-5 flex-center">
-            <!-- Facebook -->
-            <a>
-              <img id="iconos-footer" src="assets/images/facebook.png" onclick="goTo('#')">
-            </a>
-            <!-- Twitter -->
-            <a>
-              <img id="iconos-footer" src="assets/images/twitter.png" onclick="goTo('#')">
-            </a>
-            <!-- Youtube +-->
-            <a>
-              <img id="iconos-footer" src="assets/images/youtube.png" onclick="goTo('#')">
-            </a>
-            <!--Github -->
-            <a>
-              <img id="iconos-footer" src="assets/images/github.png" onclick="goTo('#')">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Copyright -->
-    <div class="footer-copyright text-center">© 2019 Copyright:
-    </div>
-  </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
