@@ -1,6 +1,7 @@
 
-(function ($) {
-
+//===================================
+//            FIREBASE
+//===================================
   var firebaseConfig = {
     apiKey: "AIzaSyAlAobkJ2AHEA9mz0QhLcOdMgfXTnyj6qQ",
     authDomain: "sipc-42387.firebaseapp.com",
@@ -14,6 +15,26 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   console.log(firebase);
+
+  var database = firebase.database();
+  var ref = firebase.database();
+  var ref = database.ref('CONTACTOS');
+
+  var datos = {
+    Nombre:    "null",
+    Apellidos: "null",
+    Correo:    "null",
+    Numero:    "null",
+    Mensaje:   "null"
+  }
+  ref.push(datos);
+
+//===================================
+//            !FIREBASE
+//===================================
+
+
+(function ($) {
 
   "use strict";
   $('.validate-input .input100').each(function(){
@@ -31,11 +52,19 @@
   $('.validate-form').on('submit',function(){
     var check = true;
     for(var i=0; i<input.length; i++) {
+      console.log(input[i]);
       if(validate(input[i]) == false){
         showValidate(input[i]);
         check=false;
       }
     }
+
+    if (check) {
+      for(var i=0; i<input.length; i++) {
+        console.log(input[i].attr());
+      }
+    }
+
     return check;
   });
 
