@@ -52,7 +52,7 @@
   $('.validate-form').on('submit',function(){
     var check = true;
     for(var i=0; i<input.length; i++) {
-      console.log(input[i]);
+      console.log(input[i].getAttribute('id'));
       if(validate(input[i]) == false){
         showValidate(input[i]);
         check=false;
