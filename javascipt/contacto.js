@@ -22,12 +22,9 @@
 
   var datos = {
     Nombre:    "null",
-    Apellidos: "null",
     Correo:    "null",
-    Numero:    "null",
     Mensaje:   "null"
-  }
-  ref.push(datos);
+  };
 
 //===================================
 //            !FIREBASE
@@ -52,17 +49,17 @@
   $('.validate-form').on('submit',function(){
     var check = true;
     for(var i=0; i<input.length; i++) {
-      console.log(input[i].getAttribute('id'));
       if(validate(input[i]) == false){
         showValidate(input[i]);
         check=false;
       }
     }
-
-    if (check) {
-      for(var i=0; i<input.length; i++) {
-        console.log(input[i].attr());
-      }
+    console.log(check);
+    if (check == true) {
+      datos.Nombre = document.getElementById('first-name').value;
+      datos.Correo = document.getElementById('email').value;
+      datos.Mensaje = document.getElementById('message').value;
+      ref.push(datos);
     }
 
     return check;
