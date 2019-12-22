@@ -17,7 +17,6 @@
   console.log(firebase);
 
   var database = firebase.database();
-  var ref = firebase.database();
   var ref = database.ref('CONTACTOS');
 
   var datos = {
