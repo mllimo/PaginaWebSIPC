@@ -11,10 +11,11 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
   <!--CSS-->
-  <link rel="stylesheet" type="text/css" href="../../stylesheets/contacto.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/contacto.css">
 
   <!--SCRIPTS-->
   <script src="/javascipt/jquery-3.4.1.min.js"></script>
+  <script src="/javascipt/footer.js"></script>
 
   <title>Contacto - E-SPORTS</title>
 </head>
@@ -58,6 +59,12 @@
     </div>
   </div>
 
+  <!-- Footer -->
+  <div id="Footer"></div>
+  <script>
+    $("#Footer" ).load( "/views/templates/footer.html" );
+  </script>
+
   <!-- Optional JavaScript -->
   <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script> 
@@ -74,5 +81,7 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 </body>
+
+
 
 </html>
