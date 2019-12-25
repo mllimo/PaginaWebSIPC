@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <head>
+            <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="../../../stylesheets/Bootstrap/bootstrap.min.css">
+            <link rel="stylesheet" href="../../../stylesheets/OW/OW.css"/>
+            <title>Overwatch Inicio</title>
+        </head>
+	</head>
+	<body>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="../../../javascipt/Bootstrap/bootstrap.min.js"></script>
+        <script src="../../../javascipt/OW/inicio_ow.js"></script>
+        <div id="sideNavigation" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Mapa</a>
+            <a href="#">Extra</a>
+            <a href="#">Torneos</a>
+            <a href="#">Iniciar sesión</a>
+        </div>
+               
+        <nav class="topnav fixed-top">
+            <a href="#" onclick="openNav()">
+                <svg width="30" height="30" id="icoOpen">
+                    <path d="M0,5 30,5" stroke="#811" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#811" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#811" stroke-width="5"/>
+                </svg>
+            </a>
+            <img src="../../../assets/images/OW/Otros/011.jpg" class="img-fluid" >
+        </nav>
+        <section class="parallax">
+            <div class="content align-center" id="">
+                <h1>Overwatch</h1>
+                <p>Registro del entorno competitivo</p>
+            </div>
+        </section>
+        <section class="container-fluid parallax-section style3 position-relative m-0" id="first">
+            <div class="m-auto inner">
+                <div class="align-center">
+                    <h2>Equipos relevantes</h2>
+                    <p>Una selección de los equipos más importantes del momento</p>
+                </div>
+            </div>
+        </section>
+        <div class="container my-2 p-5">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000" data-ride="true">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" id="carousel">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top img-fluid up-img" src="../../../assets/images/OW/Teams/cloud9.jpg">
+                                    <div class="card-body text-center text-justify">
+                                        <p class="card-text lead">Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top img-fluid" src="../../../assets/images/OW/Teams/envy.png" id="">
+                                    <div class="card-body text-center text-justify">
+                                        <p class="card-text lead">Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top img-fluid" src="../../../assets/images/OW/Teams/reunited.png">
+                                    <div class="card-body text-center text-justify ">
+                                        <p class="card-text lead">Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top img-fluid" src="../../../assets/images/OW/Teams/valiant.png">
+                                    <div class="card-body text-center text-justify">
+                                        <p class="card-text lead">Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top img-fluid" src="../../../assets/images/OW/Teams/cloud9.jpg">
+                                    <div class="card-body text-center text-justify">
+                                        <p class="card-text lead">Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top img-fluid" src="../../../assets/images/OW/Teams/envy.png" id="">
+                                    <div class="card-body text-center text-justify">
+                                        <p class="card-text lead">Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top img-fluid" src="../../../assets/images/OW/Teams/reunited.png">
+                                    <div class="card-body text-center text-justify ">
+                                        <p class="card-text lead">Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top img-fluid" src="../../../assets/images/OW/Teams/valiant.png">
+                                    <div class="card-body text-center text-justify">
+                                        <p class="card-text lead">Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top img-fluid" src="../../../assets/images/OW/Teams/cloud9.jpg">
+                                    <div class="card-body text-center text-justify">
+                                        <p class="card-text lead">Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top img-fluid" src="../../../assets/images/OW/Teams/envy.png" id="">
+                                    <div class="card-body text-center text-justify">
+                                        <p class="card-text lead">Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top img-fluid" src="../../../assets/images/OW/Teams/reunited.png">
+                                    <div class="card-body text-center text-justify ">
+                                        <p class="card-text lead">Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top img-fluid" src="../../../assets/images/OW/Teams/valiant.png">
+                                    <div class="card-body text-center text-justify">
+                                        <p class="card-text lead">Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <section class="container-fluid parallax-section style3 position-relative my-5 " id="second">
+                <div class="m-auto inner">
+                    <div class="align-center">
+                        <h2>Último campeonato</h2>
+                        <p>Resultados recopilados del último campeonato registrado</p>
+                    </div>
+                </div>
+            </section>
+            <div class="container p-3 section-format">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="h2" id="section-header"><span class="title">Torneo: </span><span id="Nombre"></span></p>
+                    </div>
+                </div>
+                <div class="row justify-content-between" id="lastTournament">
+                    <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 prueba" id="information">
+                        <lu>
+                            <li class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-justify p-3">
+                                    <p class="text-left"><span class="title">Ubicación: </span><span class="text" id="Ubicacion"></span></p>
+                                </div>
+                            </li>
+                            <li class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-justify p-3">
+                                    <p><span class="title">Fecha: </span><span class="text" id="Fecha"></span></p>
+                                </div>
+                            </li>
+                            <li class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-justify p-3">
+                                    <p><span class="title">Ganador: </span><span class="text-right" id="Ganador"></span></p>
+                                </div>
+                            </li>
+                            <li class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-justify p-3">
+                                    <p><span class="title">Región: </span><span class="text" id="Region"></span></p>
+                                </div>
+                            </li>
+                        </lu>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12" id="vs">
+                        <div class="row h-100">
+                            <div class="col-4 h-100 align-center py-4" id="left">
+                                <p>Ganador</p>
+                                <img class="img-fluid centered" src="../../../assets/images/OW/Teams/envy.png">
+                            </div>
+                            <div class="col-4" id="center">
+                                <img class="img-fluid centered" src="../../../assets/images/OW/Otros/grandmaster.png">
+                                <div class="content">
+                                    <p class="align-center">0-1</p>
+                                </div>
+                            </div>
+                            <div class="col-4 h-100 align-center py-4" id="right">
+                                <p>Perdedor</p>
+                                <img class="img-fluid centered" src="../../../assets/images/OW/Teams/envy.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+</html>

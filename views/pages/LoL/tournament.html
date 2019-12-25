@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <head>
+        <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+            <!-- Required meta tags -->
+            <title>Torneos League of Legends</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="../../../stylesheets/Bootstrap/bootstrap.min.css">
+            <link rel="stylesheet" href="../../../stylesheets/LoL/LoL.css"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+	</head>
+	<body>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="../../../javascipt/Bootstrap/bootstrap.min.js"></script>
+        <script src="../../../javascipt/LoL/tournament_lol.js"></script>
+  
+        <div id="sideNavigation" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">Mapa</a>
+          <a href="#">Extra</a>
+          <a href="#">Torneos</a>
+          <a href="#">Iniciar sesión</a>
+        </div>
+             
+      <nav class="topnav fixed-top">
+          <a href="#" onclick="openNav()">
+              <svg width="30" height="30" id="icoOpen">
+                  <path d="M0,5 30,5" stroke="#811" stroke-width="5"/>
+                  <path d="M0,14 30,14" stroke="#811" stroke-width="5"/>
+                  <path d="M0,23 30,23" stroke="#811" stroke-width="5"/>
+              </svg>
+          </a>
+          <img src="../../../assets/images/LoL/Otros/lol.png" class="img-fluid" >
+      </nav>
+
+      <div class="" id="relleno"> 
+      </div> 
+      <section class="container-fluid parallax-section style3 position-relative m-0 p-4" id="first">
+        <div class="m-auto inner">
+            <div class="align-center">
+                <h2>Torneos de League of Legends</h2>
+                <p>Un registro activo de los torneos del videojuego desde sus inicios</p>
+            </div>
+        </div>
+      </section>
+
+        <div class="mr-3 mr-md-4 ml-3 ml-md-4 mt-3 mb-4 BOX">
+          <div class="row">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="menuTorneos">
+              <button onclick="showAll()" class="col-12">Todos los registros</i></button>
+              <button onclick="display(this)" class="col-12">Fechas</button>
+              <div class="dropdown-container" id="DP1">
+                <a onclick="showByFecha(2010)" href="#">2010</a>
+                <a onclick="showByFecha(2011)" href="#">2011</a>
+                <a onclick="showByFecha(2012)" href="#">2012</a>
+                <a onclick="showByFecha(2013)" href="#">2013</a>
+                <a onclick="showByFecha(2014)" href="#">2014</a>
+                <a onclick="showByFecha(2015)" href="#">2015</a>
+                <a onclick="showByFecha(2016)" href="#">2016</a>
+                <a onclick="showByFecha(2017)" href="#">2017</a>
+                <a onclick="showByFecha(2018)" href="#">2018</a>
+                <a onclick="showByFecha(2019)" href="#">2019</a>
+              </div>
+              <button onclick="display(this)" class="col-12">Lugar</button>
+              <div class="dropdown-container" id="DP2">
+                <a onclick="showByPlace(&quot;Europa&quot)" href="#">Europa</a>
+                <a onclick="showByPlace(&quot;Estados Unidos&quot)" href="#">Estados Unidos</a>
+                <a onclick="showByPlace(&quot;Corea del Sur&quot)" href="#">Corea del Sur</a>
+                <a onclick="showByPlace(&quot;Brasil&quot)" href="#">Brasil</a>
+                <a onclick="showByPlace(&quot;Taiwán&quot)" href="#">Taiwán</a>
+                <a onclick="showByPlace(&quot;Vietnam&quot)" href="#">Vietnam</a>
+                <a onclick="showByPlace(&quot;China&quot)" href="#">China</a>
+              </div>
+              <button onclick="display(this)" class="col-12">Región</button>
+              <div class="dropdown-container" id="DP3">
+                <a onclick="showByRegion(&quot;Taiwán&quot)"href="#TaiwánID" id="TaiwánID">Taiwán</a>
+                <a onclick="showByRegion(&quot;Norte América&quot)"href="#Norte_AméricaID" id="Norte_AméricaID">Norte América</a>
+                <a onclick="showByRegion(&quot;Corea&quot)"href="#CoreaID" id="CoreaID">Corea</a>
+                <a onclick="showByRegion(&quot;Europa&quot)" href="#EuropaID" id="EuropaID">Europa</a>
+                <a onclick="showByRegion(&quot;China&quot)"href="#ChinaID" id="ChinaID">China</a>
+                <a onclick="showByRegion(&quot;Latinoamérica&quot)"href="#LatinoaméricaID" id="LatinoaméricaID">Latinoamérica</a>
+                <a onclick="showByRegion(&quot;Oceanía&quot)"href="#OceaníaID" id="OceaníaID">Oceanía</a>
+                <a onclick="showByRegion(&quot;Japón&quot)"href="#JapónID" id="JapónID">Japón</a>
+                <a onclick="showByRegion(&quot;Turquía&quot)"href="#TurquíaID" id="TurquíaID">Turquía</a>
+                <a onclick="showByRegion(&quot;Sudeste Asiático&quot)"href="#Sudeste_Asiático" id="Sudeste_Asiático">Sudeste Asiático</a>
+              </div>
+              <button onclick="display(this)" class="col-12">Participantes</button>
+              <div class="dropdown-container" id="DP4">
+                <a onclick="showByParticipants(2,10)" href="#">De 2 a 10</a>
+                <a onclick="showByParticipants(10,15)" href="#">De 10 a 15</a>
+                <a onclick="showByParticipants(15,20)" href="#">De 15 a 20</a>
+                <a onclick="showByParticipants(20,100)" href="#">Más de 20</a>
+              </div>
+            </div>
+            <div class="col-6 col-sm-8 col-md-9 col-lg-9 col-xl-10 bg-white" id="ContenidoTorneos">
+              <div class="row ml-1 mr-1 mt-3 mb-3" id="CardSection">
+
+              </div>
+            </div> 
+          </div>
+        </div>
+
+        <div id="TournamentScreen" class="mr-3 mr-md-4 ml-3 ml-md-4 mt-3 mb-4 BOX mt-5">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeCardExtended()" id="CloseButton">&times;</a>
+          <div class="row pt-4" id="FirstSection">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 ml-3">
+              <img class="img-fluid" src="../../../assets/images/LoL/Torneos/mundial.png" id="imagenTorneo">
+              <h2 style="text-align: center;" id="Nombre"></h2>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-5 ml-4" id="SubSection">
+              <div class="col-12" id="firstPosition">
+                <img class="img-fluid positionImg" src="../../../assets/images/LoL/Teams/sk telecom t1.png">
+                <p class="positionText">Primer puesto: <span id="FirstRank"></span></p>
+              </div>
+              <div class="col-12" id="secondPosition">
+                <img class="img-fluid positionImg" src="../../../assets/images/LoL/Teams/sk telecom t1.png">
+                <p class="positionText">Segundo puesto: <span id="SecondRank"></span></p>
+              </div>
+              <div class="col-12" id="thirdPosition">
+                <img class="img-fluid positionImg" src="../../../assets/images/LoL/Teams/sk telecom t1.png">
+                <p class="positionText">Tercer puesto: <span id="ThirdRank"></span></p>
+              </div>
+              <div class="col-12" id="fourthPosition">
+                <img class="img-fluid positionImg" src="../../../assets/images/LoL/Teams/sk telecom t1.png">
+                <p class="positionText">Cuarto puesto: <span id="FourthRank"></span></p>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="container">
+            <div class="row mt-5 ml-lg-5 ml-xl-5 ml-md-3 ml-sm-3 ml-2" id="InformationSection">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mb-4">
+                <p class="positionText">Fecha inicial: <span id="FechaI"></span></p>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mb-4">
+                <p class="positionText">Fecha final: <span id="FechaF"></span></p>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mb-4">
+                <p class="positionText">Lugar: <span id="Lugar"></span></p>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mb-4">
+                <p class="positionText">Región ganadora: <span id="Region"></span></p>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mb-4">
+                <p class="positionText">Participantes: <span id="Participantes"></span></p>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mb-4">
+                <p class="positionText">Rango: <span id="Rango"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
