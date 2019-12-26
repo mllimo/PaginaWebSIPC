@@ -23,6 +23,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     document.getElementById('user_div').style.display = 'block';
     document.getElementById('login_div').style.display = 'none';
+    var user = firebaseConfig.auth().currentUser;
   } else {
     document.getElementById('user_div').style.display = 'none';
     document.getElementById('login_div').style.display = 'block';
@@ -37,5 +38,13 @@ function login (){
     var errorCode = error.code;
     var errorMessage = error.message;
     window.alert(errorMessage);
+  });
+}
+
+function logout (){
+  firebase.auth().signOut().then(function() {
+    // Sign-out successful.
+  }).catch(function(error) {
+    window.alert(error);
   });
 }
