@@ -23,9 +23,9 @@
 
 <body>
 
+<div id="login_div">
   <div class="container-contact100">
     <div class="wrap-contact100">
-      <form class="contact100-form validate-form">
         <span class="contact100-form-title">
           Inicia Sesión
         </span>
@@ -50,7 +50,26 @@
             </span>
           </button>
         </div>
-      </form>
+
+    </div>
+  </div>
+</div>
+
+  <div id="user_div"> 
+    <div class="container-contact100">
+      <div class="wrap-contact100">
+        <span class="contact100-form-title">
+          Bienvenido
+        </span>
+        <div class="container-contact100-form-btn">
+          <button class="contact100-form-btn">
+            <span>
+              Salir
+              <i class="zmdi zmdi-arrow-right m-l-8"></i>
+            </span>
+          </button>
+        </div>
+      </div>  
     </div>
   </div>
 
@@ -61,10 +80,10 @@
   </script>
 
   <!-- Optional JavaScript -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script> 
+  <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
   <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
-  <script src="/javascipt/logIn.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+  <script defer src="/javascipt/logIn.js"></script>
   
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
