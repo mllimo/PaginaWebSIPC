@@ -3,9 +3,9 @@
 <EQUIPOS>
   <OVERWATCH>                           <!-- Equipos competitivos que pertenecen a la Overwatch League -->
     <DIVATLANTICO>                              <!-- División que contiene a los equipos de la zona atlantica-->
-      <EQUIPO NAME="ATLANTA REIGN">                
+      <EQUIPO NAME="ATLANTA REIGN">               
         <LOCALITATION>ATLANTA, GA</LOCALITATION>
-        <REGION>NORTH AMERICA</REGION> 
+        <REGION>NORTH AMERICA</REGION>                  
         <CREATED>02-08-2018</CREATED>
       </EQUIPO>
       <EQUIPO NAME="BOSTON UPRISING">

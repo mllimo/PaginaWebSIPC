@@ -1,0 +1,252 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+
+
+
+.parallax{
+    padding: 0;
+    background: url("../assets/images/ashe.jpg");
+    min-height: 100vh;
+	height: 100vh !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+    .parallax > #first{
+        position:absolute;
+        bottom:5px;
+        right:40%;
+    }
+
+    .parallax div{
+        margin: auto;
+    }
+
+p{
+    color: #bbb;
+}
+
+body, input, select, textarea {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 1.65;
+}
+
+body{
+    background-color: rgb(26, 24, 24);
+}
+
+/*Menú de navegación*/
+
+/*La parte oculta del menú*/
+.sidenav {
+    height: 100%; /* Toda la altura de la página web*/
+    width: 0; /* Tiene una anchura de 0 que después se cambia con JS */
+    position: fixed !important; /* Aseguramos que ocupa siempre el mismo lugar*/
+    top: 0;
+    left: 0;
+    background-color: rgb(15, 15, 15, 0.9); /* Color del menú oculto*/
+    overflow-x: hidden; /* Evita que se de scrol horizontal, garantizando que el texto se mantenga oculto */
+    padding-top: 60px; /* Separación de la parte superior */
+    transition: 0.5s; /* Tiempo que tarda la transisición */
+    z-index: 10000;
+}
+
+/* Enlaces del menú */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s /* Tiempo que tardan los enlaces en "ponerse correctamente"*/
+    }
+ 
+    /* Efecto que se produce cuando se pasa el ratón por encima de los enlaces */
+    .sidenav a:hover, .offcanvas a:focus{
+        color: #990909;
+    }
+ 
+    /* Posición y estilo del botón de salida del menú */
+    .sidenav .closebtn {
+        position: absolute !important;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+/*Barra visible del menú*/
+
+/* Color de la barra */
+.topnav {
+    background-color:	#A9A9A9;
+    overflow: hidden;
+    height: 7vh;
+}
+
+    /* Estilo de la barra */
+    .topnav a {
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /* Color que adoptarán los enlaces de la barra*/
+    .topnav a:hover {
+        background-color: #ddd; 
+    }
+
+    .topnav img{
+        display:block;
+        margin:auto;
+        height: 100%;
+        float: right;
+    }
+
+/* Comportamiento responsivo para pantallas pequeñas (450px)*/
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.parallax-section#second{
+    background-color: #000;
+    color: #bfbfbf;
+    z-index: -1;
+	background-image: url(../assets/images/lol-artwork.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    padding: 4em;
+}
+
+.parallax-section#first{
+    background-color: #000;
+    color: #bfbfbf;
+    z-index: -1;
+	background-image: url(../assets/images/sr2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    padding: 4em;
+}
+
+    .parallax-section .inner {
+        position: relative;
+        z-index: 2;
+    }
+
+    .parallax-section p {
+        text-transform: uppercase;
+        font-size: .75rem;
+        font-weight: 300;
+        margin: 0 0 .5rem 0;
+        padding: 0 0 1rem 0;
+        letter-spacing: .25rem;
+    }
+
+    .parallax-section:before { /*Se aplica en primera a parallax-section antes que el resto de "cosas"*/
+        content: '';
+        display: block;
+        background-color: rgba(0, 0, 0, 0.95);
+        height: 100%;
+        left: 0;
+        opacity: 0.75;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+.section-div{
+    height: 200px;
+}
+
+.container{
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 980px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .container {
+      max-width: 1500px;
+    }
+  }
+
+.relleno{
+    height: 800px;
+}
+
+#g2{
+    max-height: 15rem;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators li {
+    height: 5px;
+    background-color: rgb(197, 18, 18);
+}
+
+.card-body p{
+    text-transform: uppercase;
+    font-size: .95rem;
+    font-weight: 500;
+    margin: 0 0 .5rem 0;
+    padding: 0 0 1rem 0;
+    letter-spacing: .25rem;
+}
+
+.card{
+    margin-top: 20px;
+}
+
+.card:hover{
+    margin-top: 5px;
+}

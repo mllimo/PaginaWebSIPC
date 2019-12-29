@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+
+/*Menú de navegación*/
+/*La parte oculta del menú*/
+.sidenav {
+    height: 100%; /* Toda la altura de la página web*/
+    width: 0; /* Tiene una anchura de 0 que después se cambia con JS */
+    position: fixed !important; /* Aseguramos que ocupa siempre el mismo lugar*/
+    top: 0;
+    left: 0;
+    background-color: rgb(15, 15, 15, 0.9); /* Color del menú oculto*/
+    overflow-x: hidden; /* Evita que se de scrol horizontal, garantizando que el texto se mantenga oculto */
+    padding-top: 60px; /* Separación de la parte superior */
+    transition: 0.5s; /* Tiempo que tarda la transisición */
+    z-index: 10000;
+}
+
+/* Enlaces del menú */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s /* Tiempo que tardan los enlaces en "ponerse correctamente"*/
+    }
+ 
+    /* Efecto que se produce cuando se pasa el ratón por encima de los enlaces */
+    .sidenav a:hover, .offcanvas a:focus{
+        color: #990909;
+    }
+ 
+    /* Posición y estilo del botón de salida del menú */
+    .sidenav .closebtn {
+        position: absolute !important;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+/*Barra visible del menú*/
+
+/* Color de la barra */
+.topnav {
+    background-color:	rgb(0, 0, 0, 0.80);
+    overflow: hidden;
+    height: 7vh;
+}
+
+    /* Estilo de la barra */
+    .topnav a {
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /* Color que adoptarán los enlaces de la barra*/
+    .topnav a:hover {
+        background-color: #ddd; 
+    }
+
+    .topnav img{
+        display:block;
+        margin:auto;
+        height: 100%;
+        float: right;
+    }
+
+/* Comportamiento responsivo para pantallas pequeñas (450px)*/
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+body {
+  overflow-x: hidden;
+}
