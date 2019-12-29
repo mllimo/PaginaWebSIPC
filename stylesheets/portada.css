@@ -1,0 +1,63 @@
+body {
+  background: #212121;
+}
+
+h2,
+h4 {
+  font-size: 50px;
+}
+
+#sideNavigation {
+  position: absolute;
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.slider {
+  height: 100vh;
+  position: static;
+}
+
+#boton-lol, #boton-ow  {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 17% 45%;
+}
+
+.descripcion-logo {
+  color: aqua;
+  position: static;
+  text-justify: auto;
+  text-align: center;
+}
+
+#descripcion-juego {
+  color: rgb(255, 255, 255);
+  background: #2121219f;
+  text-align: center;
+}
+
+#seccion-webdescrip {
+  color: white;
+  text-align: justify;
+  position: static;
+}
+
+#titulo-icono {
+  text-align: center;
+}
+
+#iconos-info {
+  max-width: 12%;
+  height: auto;
+}
