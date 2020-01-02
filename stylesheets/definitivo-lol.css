@@ -1,0 +1,732 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+
+
+
+.parallax{
+    padding: 0;
+    background: url("../assets/images/cambios-sufre-cerebro-espacio.jpg");
+    min-height: 100vh;
+	height: 100vh !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+    .parallax > #first{
+        position:absolute;
+        bottom:5px;
+        right:40%;
+    }
+
+    .parallax div{
+        margin: auto;
+    }
+ 
+p{
+    color: #bbb;
+}
+
+body, input, select, textarea {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 1.65;
+}
+
+body{
+    background-color: rgb(26, 24, 24);
+}
+
+/*Menú de navegación*/
+
+/*La parte oculta del menú*/
+.sidenav {
+    height: 100%; /* Toda la altura de la página web*/
+    width: 0; /* Tiene una anchura de 0 que después se cambia con JS */
+    position: fixed !important; /* Aseguramos que ocupa siempre el mismo lugar*/
+    top: 0;
+    left: 0;
+    background-color: rgb(15, 15, 15, 0.9); /* Color del menú oculto*/
+    overflow-x: hidden; /* Evita que se de scrol horizontal, garantizando que el texto se mantenga oculto */
+    padding-top: 60px; /* Separación de la parte superior */
+    transition: 0.5s; /* Tiempo que tarda la transisición */
+    z-index: 10000;
+}
+
+/* Enlaces del menú */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s /* Tiempo que tardan los enlaces en "ponerse correctamente"*/
+    }
+ 
+    /* Efecto que se produce cuando se pasa el ratón por encima de los enlaces */
+    .sidenav a:hover, .offcanvas a:focus{
+        color: #990909;
+    }
+ 
+    /* Posición y estilo del botón de salida del menú */
+    .sidenav .closebtn {
+        position: absolute !important;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+/*Barra visible del menú*/
+
+/* Color de la barra */
+.topnav {
+    background-color:	#222222;
+    overflow: hidden;
+    height: 7vh;
+}
+
+    /* Estilo de la barra */
+    .topnav a {
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /* Color que adoptarán los enlaces de la barra*/
+    .topnav a:hover {
+        background-color: #ddd; 
+    }
+
+    .topnav img{
+        display:block;
+        margin:auto;
+        height: 100%;
+        float: right;
+    }
+
+/* Comportamiento responsivo para pantallas pequeñas (450px)*/
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.parallax-section#second{
+    background-color: #000;
+    color: #bfbfbf;
+    z-index: -1;
+	background-image: url(../Imágenes/lol-artwork.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    padding: 4em;
+}
+
+.parallax-section#first{
+    background-color: #000;
+    color: #bfbfbf;
+    z-index: -1;
+	background-image: url(../assets/images/mapa_lol.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    padding: 4em;
+}
+
+    .parallax-section .inner {
+        position: relative;
+        z-index: 2;
+    }
+
+    .parallax-section p {
+        text-transform: uppercase;
+        font-size: .75rem;
+        font-weight: 300;
+        margin: 0 0 .5rem 0;
+        padding: 0 0 1rem 0;
+        letter-spacing: .25rem;
+    }
+
+    .parallax-section:before { /*Se aplica en primera a parallax-section antes que el resto de "cosas"*/
+        content: '';
+        display: block;
+        background-color: rgba(0, 0, 0, 0.95);
+        height: 100%;
+        left: 0;
+        opacity: 0.75;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+.section-div{
+    height: 200px;
+}
+
+.container{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 980px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .container {
+      max-width: 1500px;
+    }
+  }
+
+.relleno{
+    height: 800px;
+}
+
+#g2{
+    max-height: 15rem;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators li {
+    height: 5px;
+    background-color: rgb(197, 18, 18);
+}
+
+#carousel .card-body p{
+    text-transform: uppercase;
+    font-size: .95rem;
+    font-weight: 500;
+    margin: 0 0 .5rem 0;
+    padding: 0 0 1rem 0;
+    letter-spacing: .25rem;
+}
+
+#carousel .card{
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(29, 26, 26, 0.2);
+    transition: 0.3s;
+}
+
+#carousel  .card:hover{
+    margin-top: 5px;
+}
+
+lu{
+    list-style: none;
+    color: #bbb;
+}
+
+    .section-format p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin: 0 0 .5rem 0;
+        padding: 0 0 1rem 0;
+        letter-spacing: .25rem;
+        font-size: 1.25rem;
+    }
+
+    .section-format .title {    
+        color: #990909;
+    }
+
+#section-header{
+    font-size: 2rem;
+    padding: 0 0 2.5rem 0;
+}
+
+.prueba{
+    background-color: rgb(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+CC{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 0 0 .5rem 0;
+    padding: 0 0 1rem 0;
+    font-size: 1.25rem;
+    color: #990909;
+}
+
+.ocultar {
+    display: none
+}
+
+.btn-NA { 
+    color: #FFFFFF; 
+    background-color: #191976; 
+    border-color: #000000; 
+  } 
+   
+  .btn-NA:hover, 
+  .btn-NA:focus, 
+  .btn-NA:active, 
+  .btn-NA.active, 
+  .open .dropdown-toggle.btn-NA { 
+    color: #FFFFFF; 
+    background-color: #2626A3; 
+    border-color: #000000; 
+  } 
+   
+  .btn-NA:active, 
+  .btn-NA.active, 
+  .open .dropdown-toggle.btn-NA { 
+    background-image: none; 
+  } 
+   
+  .btn-NA.disabled, 
+  .btn-NA[disabled], 
+  fieldset[disabled] .btn-NA, 
+  .btn-NA.disabled:hover, 
+  .btn-NA[disabled]:hover, 
+  fieldset[disabled] .btn-NA:hover, 
+  .btn-NA.disabled:focus, 
+  .btn-NA[disabled]:focus, 
+  fieldset[disabled] .btn-NA:focus, 
+  .btn-NA.disabled:active, 
+  .btn-NA[disabled]:active, 
+  fieldset[disabled] .btn-NA:active, 
+  .btn-NA.disabled.active, 
+  .btn-NA[disabled].active, 
+  fieldset[disabled] .btn-NA.active { 
+    background-color: #191976; 
+    border-color: #000000; 
+  } 
+   
+  .btn-NA .badge { 
+    color: #191976; 
+    background-color: #FFFFFF; 
+  }
+
+
+.btn-EU { 
+    color: #FFFFFF; 
+    background-color: #761974; 
+    border-color: #000000; 
+  } 
+   
+  .btn-EU:hover, 
+  .btn-EU:focus, 
+  .btn-EU:active, 
+  .btn-EU.active, 
+  .open .dropdown-toggle.btn-EU { 
+    color: #FFFFFF; 
+    background-color: #992697; 
+    border-color: #000000; 
+  } 
+   
+  .btn-EU:active, 
+  .btn-EU.active, 
+  .open .dropdown-toggle.btn-EU { 
+    background-image: none; 
+  } 
+   
+  .btn-EU.disabled, 
+  .btn-EU[disabled], 
+  fieldset[disabled] .btn-EU, 
+  .btn-EU.disabled:hover, 
+  .btn-EU[disabled]:hover, 
+  fieldset[disabled] .btn-EU:hover, 
+  .btn-EU.disabled:focus, 
+  .btn-EU[disabled]:focus, 
+  fieldset[disabled] .btn-EU:focus, 
+  .btn-EU.disabled:active, 
+  .btn-EU[disabled]:active, 
+  fieldset[disabled] .btn-EU:active, 
+  .btn-EU.disabled.active, 
+  .btn-EU[disabled].active, 
+  fieldset[disabled] .btn-EU.active { 
+    background-color: #761974; 
+    border-color: #000000; 
+  } 
+   
+  .btn-EU .badge { 
+    color: #761974; 
+    background-color: #FFFFFF; 
+  }
+
+
+.btn-China { 
+    color: #FFFFFF; 
+    background-color: #287619; 
+    border-color: #000000; 
+  } 
+   
+  .btn-China:hover, 
+  .btn-China:focus, 
+  .btn-China:active, 
+  .btn-China.active, 
+  .open .dropdown-toggle.btn-China { 
+    color: #FFFFFF; 
+    background-color: #37A122; 
+    border-color: #000000; 
+  } 
+   
+  .btn-China:active, 
+  .btn-China.active, 
+  .open .dropdown-toggle.btn-China { 
+    background-image: none; 
+  } 
+   
+  .btn-China.disabled, 
+  .btn-China[disabled], 
+  fieldset[disabled] .btn-China, 
+  .btn-China.disabled:hover, 
+  .btn-China[disabled]:hover, 
+  fieldset[disabled] .btn-China:hover, 
+  .btn-China.disabled:focus, 
+  .btn-China[disabled]:focus, 
+  fieldset[disabled] .btn-China:focus, 
+  .btn-China.disabled:active, 
+  .btn-China[disabled]:active, 
+  fieldset[disabled] .btn-China:active, 
+  .btn-China.disabled.active, 
+  .btn-China[disabled].active, 
+  fieldset[disabled] .btn-China.active { 
+    background-color: #287619; 
+    border-color: #000000; 
+  } 
+   
+  .btn-China .badge { 
+    color: #287619; 
+    background-color: #FFFFFF; 
+  }
+
+
+.btn-Korea { 
+    color: #FFFFFF; 
+    background-color: #761919; 
+    border-color: #000000; 
+  } 
+   
+  .btn-Korea:hover, 
+  .btn-Korea:focus, 
+  .btn-Korea:active, 
+  .btn-Korea.active, 
+  .open .dropdown-toggle.btn-Korea { 
+    color: #FFFFFF; 
+    background-color: #B32727; 
+    border-color: #000000; 
+  } 
+   
+  .btn-Korea:active, 
+  .btn-Korea.active, 
+  .open .dropdown-toggle.btn-Korea { 
+    background-image: none; 
+  } 
+   
+  .btn-Korea.disabled, 
+  .btn-Korea[disabled], 
+  fieldset[disabled] .btn-Korea, 
+  .btn-Korea.disabled:hover, 
+  .btn-Korea[disabled]:hover, 
+  fieldset[disabled] .btn-Korea:hover, 
+  .btn-Korea.disabled:focus, 
+  .btn-Korea[disabled]:focus, 
+  fieldset[disabled] .btn-Korea:focus, 
+  .btn-Korea.disabled:active, 
+  .btn-Korea[disabled]:active, 
+  fieldset[disabled] .btn-Korea:active, 
+  .btn-Korea.disabled.active, 
+  .btn-Korea[disabled].active, 
+  fieldset[disabled] .btn-Korea.active { 
+    background-color: #761919; 
+    border-color: #000000; 
+  } 
+   
+  .btn-Korea .badge { 
+    color: #761919; 
+    background-color: #FFFFFF; 
+  }
+
+  .ir-arriba {
+	display:none;
+	padding:20px;
+	background:#024959;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
+
+
+.btn-latinoamerica { 
+  color: #FFFFFF; 
+  background-color: #ECA529; 
+  border-color: #000000; 
+} 
+ 
+.btn-latinoamerica:hover, 
+.btn-latinoamerica:focus, 
+.btn-latinoamerica:active, 
+.btn-latinoamerica.active, 
+.open .dropdown-toggle.btn-latinoamerica { 
+  color: #FFFFFF; 
+  background-color: #E8BD72; 
+  border-color: #000000; 
+} 
+ 
+.btn-latinoamerica:active, 
+.btn-latinoamerica.active, 
+.open .dropdown-toggle.btn-latinoamerica { 
+  background-image: none; 
+} 
+ 
+.btn-latinoamerica.disabled, 
+.btn-latinoamerica[disabled], 
+fieldset[disabled] .btn-latinoamerica, 
+.btn-latinoamerica.disabled:hover, 
+.btn-latinoamerica[disabled]:hover, 
+fieldset[disabled] .btn-latinoamerica:hover, 
+.btn-latinoamerica.disabled:focus, 
+.btn-latinoamerica[disabled]:focus, 
+fieldset[disabled] .btn-latinoamerica:focus, 
+.btn-latinoamerica.disabled:active, 
+.btn-latinoamerica[disabled]:active, 
+fieldset[disabled] .btn-latinoamerica:active, 
+.btn-latinoamerica.disabled.active, 
+.btn-latinoamerica[disabled].active, 
+fieldset[disabled] .btn-latinoamerica.active { 
+  background-color: #ECA529; 
+  border-color: #000000; 
+} 
+ 
+.btn-latinoamerica .badge { 
+  color: #ECA529; 
+  background-color: #FFFFFF; 
+}
+
+
+.btn-oceania { 
+  color: #FFFFFF; 
+  background-color: #0C8B94; 
+  border-color: #000000; 
+} 
+ 
+.btn-oceania:hover, 
+.btn-oceania:focus, 
+.btn-oceania:active, 
+.btn-oceania.active, 
+.open .dropdown-toggle.btn-oceania { 
+  color: #FFFFFF; 
+  background-color: #12BBC7; 
+  border-color: #000000; 
+} 
+ 
+.btn-oceania:active, 
+.btn-oceania.active, 
+.open .dropdown-toggle.btn-oceania { 
+  background-image: none; 
+} 
+ 
+.btn-oceania.disabled, 
+.btn-oceania[disabled], 
+fieldset[disabled] .btn-oceania, 
+.btn-oceania.disabled:hover, 
+.btn-oceania[disabled]:hover, 
+fieldset[disabled] .btn-oceania:hover, 
+.btn-oceania.disabled:focus, 
+.btn-oceania[disabled]:focus, 
+fieldset[disabled] .btn-oceania:focus, 
+.btn-oceania.disabled:active, 
+.btn-oceania[disabled]:active, 
+fieldset[disabled] .btn-oceania:active, 
+.btn-oceania.disabled.active, 
+.btn-oceania[disabled].active, 
+fieldset[disabled] .btn-oceania.active { 
+  background-color: #0C8B94; 
+  border-color: #000000; 
+} 
+ 
+.btn-oceania .badge { 
+  color: #0C8B94; 
+  background-color: #FFFFFF; 
+}
+
+
+.btn-turquia { 
+  color: #FFFFFF; 
+  background-color: #FF6600; 
+  border-color: #000000; 
+} 
+ 
+.btn-turquia:hover, 
+.btn-turquia:focus, 
+.btn-turquia:active, 
+.btn-turquia.active, 
+.open .dropdown-toggle.btn-turquia { 
+  color: #FFFFFF; 
+  background-color: #FF9147; 
+  border-color: #000000; 
+} 
+ 
+.btn-turquia:active, 
+.btn-turquia.active, 
+.open .dropdown-toggle.btn-turquia { 
+  background-image: none; 
+} 
+ 
+.btn-turquia.disabled, 
+.btn-turquia[disabled], 
+fieldset[disabled] .btn-turquia, 
+.btn-turquia.disabled:hover, 
+.btn-turquia[disabled]:hover, 
+fieldset[disabled] .btn-turquia:hover, 
+.btn-turquia.disabled:focus, 
+.btn-turquia[disabled]:focus, 
+fieldset[disabled] .btn-turquia:focus, 
+.btn-turquia.disabled:active, 
+.btn-turquia[disabled]:active, 
+fieldset[disabled] .btn-turquia:active, 
+.btn-turquia.disabled.active, 
+.btn-turquia[disabled].active, 
+fieldset[disabled] .btn-turquia.active { 
+  background-color: #FF6600; 
+  border-color: #000000; 
+} 
+ 
+.btn-turquia .badge { 
+  color: #FF6600; 
+  background-color: #FFFFFF; 
+}
+
+.btn-vietnam { 
+  color: #FFFFFF; 
+  background-color: #F00562; 
+  border-color: #000000; 
+} 
+ 
+.btn-vietnam:hover, 
+.btn-vietnam:focus, 
+.btn-vietnam:active, 
+.btn-vietnam.active, 
+.open .dropdown-toggle.btn-vietnam { 
+  color: #FFFFFF; 
+  background-color: #E84C8B; 
+  border-color: #000000; 
+} 
+ 
+.btn-vietnam:active, 
+.btn-vietnam.active, 
+.open .dropdown-toggle.btn-vietnam { 
+  background-image: none; 
+} 
+ 
+.btn-vietnam.disabled, 
+.btn-vietnam[disabled], 
+fieldset[disabled] .btn-vietnam, 
+.btn-vietnam.disabled:hover, 
+.btn-vietnam[disabled]:hover, 
+fieldset[disabled] .btn-vietnam:hover, 
+.btn-vietnam.disabled:focus, 
+.btn-vietnam[disabled]:focus, 
+fieldset[disabled] .btn-vietnam:focus, 
+.btn-vietnam.disabled:active, 
+.btn-vietnam[disabled]:active, 
+fieldset[disabled] .btn-vietnam:active, 
+.btn-vietnam.disabled.active, 
+.btn-vietnam[disabled].active, 
+fieldset[disabled] .btn-vietnam.active { 
+  background-color: #F00562; 
+  border-color: #000000; 
+} 
+ 
+.btn-vietnam .badge { 
+  color: #F00562; 
+  background-color: #FFFFFF; 
+}
+
+
+.btn-taiwan { 
+  color: #FFFFFF; 
+  background-color: #260451; 
+  border-color: #000000; 
+} 
+ 
+.btn-taiwan:hover, 
+.btn-taiwan:focus, 
+.btn-taiwan:active, 
+.btn-taiwan.active, 
+.open .dropdown-toggle.btn-taiwan { 
+  color: #FFFFFF; 
+  background-color: #490C99; 
+  border-color: #000000; 
+} 
+ 
+.btn-taiwan:active, 
+.btn-taiwan.active, 
+.open .dropdown-toggle.btn-taiwan { 
+  background-image: none; 
+} 
+ 
+.btn-taiwan.disabled, 
+.btn-taiwan[disabled], 
+fieldset[disabled] .btn-taiwan, 
+.btn-taiwan.disabled:hover, 
+.btn-taiwan[disabled]:hover, 
+fieldset[disabled] .btn-taiwan:hover, 
+.btn-taiwan.disabled:focus, 
+.btn-taiwan[disabled]:focus, 
+fieldset[disabled] .btn-taiwan:focus, 
+.btn-taiwan.disabled:active, 
+.btn-taiwan[disabled]:active, 
+fieldset[disabled] .btn-taiwan:active, 
+.btn-taiwan.disabled.active, 
+.btn-taiwan[disabled].active, 
+fieldset[disabled] .btn-taiwan.active { 
+  background-color: #260451; 
+  border-color: #000000; 
+} 
+ 
+.btn-taiwan .badge { 
+  color: #260451; 
+  background-color: #FFFFFF; 
+}
