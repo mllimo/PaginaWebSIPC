@@ -9,7 +9,7 @@
 		<title>Mapa League of Legends</title>
 		<!-- Bootstrap Css-->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-        <link rel="stylesheet" href="../../stylesheets/definitivo.css">
+        <link rel="stylesheet" href="../../stylesheets/definitivo-lol.css">
         <link rel="stylesheet" href="../../stylesheets/footer.css">
         <link rel="stylesheet" href="../../stylesheets/menu.css">
 
@@ -29,7 +29,8 @@
 		<!-- Barra de navegación -->
 		<div id="sideNavigation" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="mapa_LOL.html">Mapa</a>
+            <a href="../../index.html">Página principal</a>
+            <a href="LoL/main.html">Inicio</a>
             <a href="LoL/tournament.html">Torneos</a>
             <a href="logIn.html">Iniciar sesión</a>
         </div>
@@ -44,7 +45,7 @@
             </a>
             <img src="../../assets/images/lol-logo.png" class="img-fluid" alt="AQUÍ VA IMAGEN JUEGO" onclick="window.scrollTo(0,0);">
         </nav>
-		<!-- Fin de la barra de navegación -->
+        <!-- Fin de la barra de navegación -->
 	
         <!-- Información a cerca de los equipos -->
         <div id ="norte_america" class="container my-2 p-5 ocultar">
@@ -253,12 +254,22 @@
                 </div>
             </div>
         </div> 
-		<!-- Fin de la información a cerca de los equipos -->
+        <!-- Fin de la información a cerca de los equipos -->
+        <section class=" container-fluid parallax-section style3 position-relative mt-3 p-4" id="first" style="height: 120px;">
+            <div class="m-auto inner">
+                <div class="align-center">
+                    <h2>Mapa de equipos de League of Legends</h2>
+                    <p>Zonas geográficas donde se localizan los principales equipos</p>
+                </div>
+            </div>
+        </section>
         <!-- Mapa responsivo -->
-        <div class="container my-2 p-5">
+        <div class="container-fluid my-2">
             <div class="row">
-                <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 my- " id="map-lol" style="width: 100%; height: 580px;box-shadow: 0 2px 8px 0 rgba(0,0,0,0.6);"></div>
-            <div>
+                <section class="parallax col-lg-1 col-xl-1 col-md-1 col-sm-1"></section>
+                <div class="col-lg-10 col-xl-10 col-md-10 col-sm-10" id="map-lol" style=" box-shadow: 10px 2px 8px 0px rgba(0,0,0,0.6); width: 100%; height: 625px; left: -10px;"></div>
+                <section class="parallax col-lg-1 col-xl-1 col-md-1 col-sm-1"></section>
+            </div>
         </div>
         <!-- Fin del mapa responsivo -->
         <div class="container my-2 p-5">
@@ -287,15 +298,17 @@
                 <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
                     <button type="button" class="btn-Korea btn-lg" onclick="muestra_oculta('corea');">Corea</button>
                 </div>
-                <div class="col-lg-2 col-xl-3 col-md-1 col-sm-12"></div>
-                <div class="col-lg-3 col-xl-7 col-md-6 col-sm-12 my-1">
+                <div class="col-lg-3 col-xl-3 col-md-1 col-sm-12"></div>
+                <div class="col-lg-1 col-xl-7 col-md-6 col-sm-12 my-1">
                     <button type="button" class="btn-taiwan btn-lg" onclick="muestra_oculta('taiwan') ;">Taiwan, Macao y Hong Kong</button>
                 </div>
             </div>
         </div>
-        <div id="Footer"></div>
+        <div class="row">
+            <div id="Footer" class="container-fluid media-body" style="width: 102%; left: -10px;"></div>
+        </div>
         <script>
         $("#Footer" ).load( "/views/templates/footer.html" );
-        </script>
+        </script>  
     </body>
 </html>

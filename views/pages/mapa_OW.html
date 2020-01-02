@@ -9,7 +9,7 @@
 		<title>Mapa Overwatch</title>
 		<!-- Bootstrap Css-->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-        <link rel="stylesheet" href="../../stylesheets/definitivo.css">
+        <link rel="stylesheet" href="../../stylesheets/definitivo-ow.css">
         <link rel="stylesheet" href="../../stylesheets/footer.css">
         <link rel="stylesheet" href="../../stylesheets/menu.css">
 	</head>
@@ -32,7 +32,8 @@
 		<!-- Barra de navegación -->
 		<div id="sideNavigation" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="mapa_OW.html">Mapa</a>
+            <a href="../../index.html">Página principal</a>
+            <a href="OW/main.html">Inicio</a>
             <a href="OW/tournament.html">Torneos</a>
             <a href="logIn.html">Iniciar sesión</a>
         </div>
@@ -45,7 +46,7 @@
                     <path d="M0,23 30,23" stroke="#811" stroke-width="5"/>
                 </svg>
             </a>
-            <img src="imagenes/ow.png" class="img-fluid" alt="AQUÍ VA IMAGEN JUEGO" onclick="window.scrollTo(0,0);">
+            <img src="../../assets/images/ow-logo.png" class="img-fluid" alt="AQUÍ VA IMAGEN JUEGO" onclick="window.scrollTo(0,0);"></img>
         </nav>
 		<!-- Fin de la barra de navegación -->
 	
@@ -254,33 +255,45 @@
                 </div>
             </div>
         </div>  
-		<!-- Fin de la información a cerca de los equipos -->
+        <!-- Fin de la información a cerca de los equipos -->
+        <section class=" container-fluid parallax-section style3 position-relative mt-3 p-4" id="first" style="height: 120px;">
+            <div class="m-auto inner">
+                <div class="align-center">
+                    <h2>Mapa de equipos de Overwatch</h2>
+                    <p>Zonas geográficas donde se localizan los principales equipos</p>
+                </div>
+            </div>
+        </section>
         <!-- Mapa responsivo -->
-        <div class="container my-2 p-5">
+        <div class="container-fluid my-2">
             <div class="row">
-                <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 " id="map-ow" style="width: 100%; height: 580px;box-shadow: 0 2px 8px 0 rgba(0,0,0,0.6);"></div>
-            <div>
+                <section class="parallax col-lg-1 col-xl-1 col-md-1 col-sm-1"></section>
+                <div class="col-lg-10 col-xl-10 col-md-10 col-sm-10 " id="map-ow" style="width: 100%; height: 625px; box-shadow: 10px 2px 8px 0px rgba(0,0,0,0.6); left: -10px;"></div>
+                <section class="parallax col-lg-1 col-xl-1 col-md-1 col-sm-1" style="width: 100%; height: 625px;"></section>
+            </div>
         </div>
         <!-- Fin del mapa responsivo -->
         <div class="container my-2 p-5">
             <div class="row">
-                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                <div class="col-xl-4 col-lg-3 col-md-5 col-sm-11 my-1">
                     <button type="button" class="btn-NA btn-lg" onclick="muestra_oculta('norte_america') ;">Norte américa</button>
                 </div>
-                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                <div class="col-xl-3 col-lg-3  col-md-5 col-sm-11 my-1 ">
                     <button type="button" class="btn-EU btn-primary btn-lg" onclick="muestra_oculta('europa'); ">Europa</button>
                 </div>
-                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                <div class="col-xl-3 col-lg-3 col-md-5 col-sm-11 my-1">
                     <button type="button" class="btn-China btn-lg" onclick="muestra_oculta('china');">China</button>
                 </div>
-                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                <div class="col-xl-1 col-lg-3 col-md-5 col-sm-11 my-1">
                     <button type="button" class="btn-Korea btn-lg" onclick="muestra_oculta('corea');">Corea</button>
                 </div>
             </div>
         </div>
-        <div id="Footer"></div>
+        <div class="row">
+            <div id="Footer" class="container-fluid media-body" style="width: 102%; left: -10px;"></div>
+        </div>
         <script>
-          $("#Footer" ).load( "/views/templates/footer.html" );
+          $("#Footer" ).load( "/views/templates/footer.html");
         </script> 
     </body>
 </html>
