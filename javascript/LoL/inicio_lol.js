@@ -28,9 +28,9 @@ const db = firebase.database();
 
 //Obtener el torneo más reciente
 const TorneosLoL = db.ref("Torneos/LoL").orderByChild("Fecha final").limitToFirst(1); //Limitamos
-TorneosLoL.on('value',gotDataLastTournament);
+TorneosLoL.on('value',getDataLastTournament);
 
-function gotDataLastTournament(data){
+function getDataLastTournament(data){
     var torneo = data.val();
     var key = Object.keys(torneo);
     var k = key[0];
@@ -40,10 +40,12 @@ function gotDataLastTournament(data){
     var ganador = torneo[k].Ganador;
     var region = torneo[k].RegiónGanador;
     var lugar = torneo[k].Lugar;
-    console.log(fechaI,nombre,ganador,region);
+    var segundo = torneo[k].SegundoPuesto;
     document.getElementById("Ubicacion").innerText = (" " + lugar);
     document.getElementById("Fecha").innerText = (" " + fechaI + " / " + fechaF);
     document.getElementById("Ganador").innerText = (" " + ganador);
     document.getElementById("Region").innerText = (" " + region);
     document.getElementById("Nombre").innerText = (" " + nombre);
+    document.getElementById("ganadorImg").src = "../../../assets/images/LOL/Teams/" + ganador + ".png";
+    document.getElementById("perdedorImg").src = "../../../assets/images/LOL/Teams/" + segundo + ".png";
 }

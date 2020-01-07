@@ -41,11 +41,8 @@ function buildTournamentCard(data){
         var nombre = torneos[k].Nombre;
         document.getElementById("CardSection").innerHTML += `
                                                             <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 pt-3 card-section-content" id="C`+i+`">
-                                                                <div onclick="buildCardExtended(this.parentNode.id)" class="card no-padding bg-info" title="`+nombre+`">
-                                                                    <img class="card-img-top img-fluid" src="" alt="`+nombre+`">
-                                                                    <div class="card-body">
-                                                                        <p class="card-text">`+nombre+`</p>
-                                                                    </div>
+                                                                <div onclick="buildCardExtended(this.parentNode.id)" class="card no-padding bg-transparent" title="`+nombre+`">
+                                                                    <img class="card-img-top img-fluid" src="../../../assets/images/LOL/Torneos/`+ nombre +`.png" alt="`+nombre+`">
                                                                 </div>
                                                             </div>
                                                             `
@@ -159,7 +156,7 @@ function showByParticipants(num1,num2){
 //Muestreo de card extendido
 
 function openCardExtended() {
-    document.getElementById("TournamentScreen").style.height = "600px";
+    document.getElementById("TournamentScreen").style.height = "1000px";
     document.getElementById("TournamentScreen").style.borderStyle = "solid";
     document.getElementById("CloseButton").style.fontSize = "37px";
   }
@@ -187,5 +184,10 @@ function buildCardExtended(data){
     document.getElementById("ThirdRank").innerText = currentData.TercerPuesto;
     document.getElementById("FourthRank").innerText = currentData.CuartoPuesto;
     document.getElementById("Participantes").innerText = currentData.Participantes;
+    document.getElementById("imagenTorneo").src = "../../../assets/images/LOL/Torneos/" + currentData.Nombre + ".png";
+    document.getElementById("firstImg").src = "../../../assets/images/LOL/Teams/" + currentData.Ganador + ".png";
+    document.getElementById("secondImg").src = "../../../assets/images/LOL/Teams/" + currentData.SegundoPuesto + ".png";
+    document.getElementById("thirdImg").src = "../../../assets/images/LOL/Teams/" + currentData.TercerPuesto + ".png";
+    document.getElementById("fourImg").src = "../../../assets/images/LOL/Teams/" + currentData.CuartoPuesto + ".png";
     openCardExtended();
 }
