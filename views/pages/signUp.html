@@ -1,127 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description"
+    content="Registrate en nuestra página sobre deporte electrónico para estar al tanto de las últimas novedades" />
+  <meta name="keywords" content="registrarse, E-SPORTS" />
+  <link rel="icon" href="/assets/images/LogoPagina.ico" type="image/x-icon">
 
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="/stylesheets/signUp.css" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/footer.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-    <!--SCRIPTS-->
-    <script src="/javascript/jquery-3.4.1.min.js"></script>
-    <script src="/javascript/footer.js"></script>
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="/stylesheets/signUp.css" />
+  <link rel="stylesheet" type="text/css" href="/stylesheets/footer.css" />
 
-    <title>Sign Up - E-SPORTS</title>
-  </head>
+  <!--SCRIPTS-->
+  <script src="/javascript/jquery-3.4.1.min.js"></script>
+  <script src="/javascript/footer.js"></script>
 
-  <body>
-    <div id="login_div">
-      <div class="container-contact100">
-        <div class="wrap-contact100">
-          <form class="contact100-form validate-form">
+  <title>Sign Up - E-SPORTS</title>
+</head>
+
+<body>
+  <div id="login_div">
+    <div class="container-contact100">
+      <div class="wrap-contact100">
+        <form class="contact100-form validate-form">
           <span class="contact100-form-title">
             Registro
           </span>
 
           <label class="label-input100" for="email">Correo electrónico *</label>
           <div class="wrap-input100 validate-input">
-            <input
-              id="email"
-              class="input100"
-              type="text"
-              name="email"
-              placeholder=""
-            />
+            <input id="email" class="input100" type="text" name="email" placeholder="" />
             <span class="focus-input100"></span>
           </div>
 
           <label class="label-input100" for="email">Escriba de nuevo su correo</label>
           <div class="wrap-input100 validate-input">
-            <input
-              id="email-rep"
-              class="input100"
-              type="text"
-              name="email"
-              placeholder=""
-            />
+            <input id="email-rep" class="input100" type="text" name="email" placeholder="" />
             <span class="focus-input100"></span>
           </div>
 
           <label class="label-input100" for="password">Contraseña *</label>
           <div class="wrap-input100 validate-input">
-            <input
-              id="password"
-              class="input100"
-              type="password"
-              name="password"
-              placeholder=""
-            />
+            <input id="password" class="input100" type="password" name="password" placeholder="" />
             <span class="focus-input100"></span>
           </div>
-          </form>
-          
-          <div class="d-flex justify-content-center links">
-            ¿Ya tienes cuenta? <pre> </pre>
-            <a href="/views/pages/logIn.html">Inicia sesión</a>
-          </div>
+        </form>
 
-          <div class="container-contact100-form-btn">
-            <button class="contact100-form-btn" onclick="signUp()">
-              <span>
-                Registrarse
-                <i class="zmdi zmdi-arrow-right m-l-8"></i>
-              </span>
-            </button>
-          </div>
-          
+        <div class="d-flex justify-content-center links">
+          ¿Ya tienes cuenta?
+          <pre> </pre>
+          <a href="/views/pages/logIn.html">Inicia sesión</a>
         </div>
+
+        <div class="container-contact100-form-btn">
+          <button class="contact100-form-btn" onclick="signUp()">
+            <span>
+              Registrarse
+              <i class="zmdi zmdi-arrow-right m-l-8"></i>
+            </span>
+          </button>
+        </div>
+
       </div>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <div id="Footer"></div>
-    <script>
-      $("#Footer").load("/views/templates/footer.html");
-    </script>
+  <!-- Footer -->
+  <div id="Footer"></div>
+  <script>
+    $("#Footer").load("/views/templates/footer.html");
+  </script>
 
-    <!-- Optional JavaScript -->
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"
-    ></script>
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"
-    ></script>
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"
-    ></script>
-    <script defer src="/javascript/signUp.js"></script>
+  <!-- Optional JavaScript -->
+  <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+  <script defer src="/javascript/signUp.js"></script>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
