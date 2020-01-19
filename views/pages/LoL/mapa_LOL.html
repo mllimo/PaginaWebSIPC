@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+
+ 	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Mapa League of Legends</title>
+        <meta name="description" content="Mapa de quipos de League of Legends" />
+        <meta name="keywords" content="Equipos, mapa, torneo, eSports, Español, G2, FNATIC" />
+        <link rel="icon" href="/assets/images/LogoPagina.ico" type="image/x-icon">
+		<!-- Bootstrap Css-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <link rel="stylesheet" href="../../../stylesheets/definitivo-lol.css">
+        <link rel="stylesheet" href="../../../stylesheets/footer.css">
+
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="../../../javascript/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/ammap.js"></script>
+        <script type="text/javascript" src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+        <script type="text/javascript" src="../../../javascript/mapa-lol.js"></script>
+		<script type="text/javascript" src="../../../javascript/definitivo.js"></script>
+		<script type="text/javascript" src="../../../javascript/ocultarelement-lol.js"></script>
+        <script type="text/javascript" src="../../../javascript/footer.js"></script>
+        <script type="text/javascript" src="../../../javascript/menu.js"></script>
+	</head>
+	<body style="margin: 0; background-color:  #222222;"></body>
+
+		<!-- Barra de navegación -->
+		<div id="sideNavigation" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../../../index.html">Página principal</a>
+            <a href="main.html">Inicio</a>
+            <a href="tournament.html">Torneos</a>
+            <a href="../logIn.html">Iniciar sesión</a>
+        </div>
+               
+        <nav class="topnav fixed-top">
+            <a href="#" onclick="openNav()">
+                <svg width="30" height="30" id="icoOpen">
+                    <path d="M0,5 30,5" stroke="#811" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#811" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#811" stroke-width="5"/>
+                </svg>
+            </a>
+            <img src="../../../assets/images/lol-logo.png" class="img-fluid" alt="AQUÍ VA IMAGEN JUEGO" onclick="window.scrollTo(0,0);">
+        </nav>
+        <!-- Fin de la barra de navegación -->
+    
+        <div id="relleno"></div>
+
+        <!-- Información a cerca de los equipos -->
+        <div id ="norte_america" class="container my-2 p-5 ocultar">
+            <div class="row">
+                <div class="col-lg-2 col-xl-2 col-md-6 col-sm-12"></div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/Cloud9"><img class="card-img-top img-fluid" src="../../../assets/images/LOL/Norte América/C9.png"></a>
+                        <div class="card-body text-center text-justify">
+                            <CC>Localizaci&oacute;n: UNITED STATES</CC>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/Clutch_Gaming"><img class="card-img-top img-fluid" src="../../../assets/images/LOL/Norte América/Clutch_Gaming_Dignitas.png"></a>
+                        <div class="card-body text-center text-justify">
+                            <CC>Localizaci&oacute;n: UNITED STATES</CC>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/Team_Liquid"><img class="card-img-top img-fluid" src="../../../assets/images/LOL/Norte América/Team_Liquid_2017_Vertical_Type.png"></a>
+                        <div class="card-body text-center text-justify ">
+                            <CC>Localizaci&oacute;n: NETHERLANDS AND UNITED STATES</CC>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id ="china" class="container my-2 p-5 ocultar">
+            <div class="row">
+                <div class="col-lg-2 col-xl-2 col-md-6 col-sm-12"></div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/FunPlus_Phoenix"><img class="card-img-top img-fluid up-img" src="../../../assets/images/LOL/China/FPX_LoL_new_logo.png"></a>
+                        <div class="card-body text-center text-justify">
+                            <CC>Localizaci&oacute;n: CHINA</CC>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/Invictus_Gaming"><img class="card-img-top img-fluid" src="../../../assets/images/LOL/China/Invictus_Gaming_logo.png"></a>
+                        <div class="card-body text-center text-justify">
+                            <CC>Localizaci&oacute;n: CHINA</CC>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/Royal_Never_Give_Up"><img class="card-img-top img-fluid" src="../../../assets/images/LOL/China/RNG_Logo.png"></a>
+                        <div class="card-body text-center text-justify ">
+                            <CC>Localizaci&oacute;n: CHINA, BEIJING</CC>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id ="europa" class="container my-2 p-5 ocultar">
+            <div class="row">
+                <div class="col-lg-2 col-xl-2 col-md-6 col-sm-12"></div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/Fnatic"><img class="card-img-top img-fluid up-img" src="../../../assets/images/LOL/Europa/Fnaticlogo.png"></a>
+                        <div class="card-body text-center text-justify">
+                            <CC>Localizaci&oacute;n: LONDON, EUROPE</CC>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/G2_Esports"><img class="card-img-top img-fluid" src="../../../assets/images/LOL/Europa/G2_Esports_2019.png"></a>
+                        <div class="card-body text-center text-justify">
+                            <CC>Localizaci&oacute;n: SPAIN, EUROPE</CC>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/Splyce"><img class="card-img-top img-fluid" src="../../../assets/images/LOL/Europa/Splyce_Logo_2017.png"></a>
+                        <div class="card-body text-center text-justify ">
+                            <CC>Localizaci&oacute;n: EUROPE AND UNITED STATES</CC>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id ="corea" class="container my-2 p-5 ocultar">
+            <div class="row">
+                <div class="col-lg-2 col-xl-2 col-md-6 col-sm-12"></div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/DAMWON_Gaming"><img class="card-img-top img-fluid up-img" src="../../../assets/images/LOL/Korea/DAMWON_Gaming_Logo.png"></a>
+                        <div class="card-body text-center text-justify">
+                            <CC>Localizaci&oacute;n: KOREA</CC>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/Griffin"><img class="card-img-top img-fluid" src="../../../assets/images/LOL/Korea/Griffinlogo_2018.png"></a>
+                        <div class="card-body text-center text-justify">
+                            <CC>Localizaci&oacute;n: SEOUL, KOREA</CC>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/T1"><img class="card-img-top img-fluid" src="../../../assets/images/LOL/Korea/T1_2019Oct_Logo.png"></a>
+                        <div class="card-body text-center text-justify ">
+                            <CC>Localizaci&oacute;n: SEOUL, KOREA</CC>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div id ="latinoamerica" class="container my-2 p-5 ocultar">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-xl-4 col-md-6 col-sm-12 my-1"></div> 
+                <div class="col-lg-7 col-xl-5 col-md-12 col-sm-12 my-1">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/Isurus_Gaming"><img class="card-img-top img-fluid" src="../../../assets/images/LOL/Latino América/Isuruslogo3.png"></a>
+                        <div class="card-body text-center text-justify ">
+                            <CC>Localizaci&oacute;n: ARGENTINA AND CHILE</CC>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div id ="oceania" class="container my-2 p-5 ocultar">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-xl-4 col-md-6 col-sm-12 my-1"></div> 
+                <div class="col-lg-7 col-xl-5 col-md-12 col-sm-12 my-1">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/MAMMOTH"><img class="card-img-top img-fluid" src="../../../assets/images/LOL/Oceanía/Mammoth_2019.png"></a>
+                        <div class="card-body text-center text-justify ">
+                            <CC>Localizaci&oacute;n: AUSTRALIA</CC>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div id ="turquia" class="container my-2 p-5 ocultar">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-xl-4 col-md-6 col-sm-12 my-1"></div> 
+                <div class="col-lg-7 col-xl-5 col-md-12 col-sm-12 my-1">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/Royal_Youth"><img class="card-img-top img-fluid" src="../../../assets/images/LOL/Turquía/Royal_Youth_2018_Logo.png"></a>
+                        <div class="card-body text-center text-justify ">
+                            <CC>Localizaci&oacute;n: TURKEY</CC>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div id ="vietnam" class="container my-2 p-5 ocultar">
+            <div class="row">
+                <div class="col-lg-2 col-xl-2 col-md-4 col-sm-12"></div>
+                <div class="col-lg-3 col-xl-3 col-md-4 col-sm-12">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/GAM_Esports"><img class="card-img-top img-fluid up-img" src="../../../assets/images/LOL/Vietnam/GAM.png"></a>
+                        <div class="card-body text-center text-justify">
+                            <CC>Localizaci&oacute;n: VIETNAM</CC>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-xl-2 col-md-5 col-sm-12"></div>
+                <div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 my-1">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/Lowkey_Esports"><img class="card-img-top img-fluid" src="../../../assets/images/LOL/Vietnam/Lowkey_Esports.png"></a>
+                        <div class="card-body text-center text-justify">
+                            <CC>Localizaci&oacute;n: NORTH AMERICA</CC>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id ="taiwan" class="container my-2 p-5 ocultar">
+            <div class="row">
+                <div class="col-lg-2 col-xl-2 col-md-6 col-sm-12"></div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/Ahq_e-Sports_Club"><img class="card-img-top img-fluid up-img" src="../../../assets/images/LOL/Taiwan, Macao y Hong Kong/Ahq_logo.png"></a>
+                        <div class="card-body text-center text-justify">
+                            <CC>Localizaci&oacute;n: TAIWAN</CC>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/Hong_Kong_Attitude"><img class="card-img-top img-fluid" src="../../../assets/images/LOL/Taiwan, Macao y Hong Kong/Hong_Kong_Attitude_logo_2017.png"></a>
+                        <div class="card-body text-center text-justify">
+                            <CC>Localizaci&oacute;n: HONG KONG</CC>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                    <div class="card bg-transparent">
+                        <a href="https://liquipedia.net/leagueoflegends/J_Team"><img class="card-img-top img-fluid" src="../../../assets/images/LOL/Taiwan, Macao y Hong Kong/J_Team_Logo.png"></a>
+                        <div class="card-body text-center text-justify ">
+                            <CC>Localizaci&oacute;n: MACAO</CC>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Fin de la información a cerca de los equipos -->
+        <section class=" container-fluid parallax-section style3 position-relative mt-3 p-4" id="first" style="height: 120px;">
+            <div class="m-auto inner">
+                <div class="align-center">
+                    <h2>Mapa de equipos de League of Legends</h2>
+                    <p>Zonas geográficas donde se localizan los principales equipos</p>
+                </div>
+            </div>
+        </section>
+        <!-- Mapa responsivo -->
+        <div class="container-fluid my-2">
+            <div class="row">
+                <section class="parallax col-lg-1 col-xl-1 col-md-1" style="width: 100%; "></section>
+                <div class="col-lg-10 col-xl-10 col-md-10 col-sm-10" id="map-lol" style=" box-shadow: 10px 2px 8px 0px rgba(0,0,0,0.6); width: 100%; height: 39rem; left: -10px;"></div>
+                <section class="parallax col-lg-1 col-xl-1 col-md-1" style="width: 100%; "></section>
+            </div>
+        </div>
+        <!-- Fin del mapa responsivo -->
+        <div class="container my-2 p-5">
+            <div class="row">
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                    <button type="button" class="btn-NA btn-lg" onclick="muestra_oculta('norte_america') ;">Norte américa</button>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                    <button type="button" class="btn-oceania btn-primary btn-lg" onclick="muestra_oculta('oceania'); ">Oceanía</button>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                    <button type="button" class="btn-EU btn-primary btn-lg" onclick="muestra_oculta('europa'); ">Europa</button>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                    <button type="button" class="btn-China btn-lg" onclick="muestra_oculta('china');">China</button>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                    <button type="button" class="btn-latinoamerica btn-lg" onclick="muestra_oculta('latinoamerica') ;">Latino América</button>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                    <button type="button" class="btn-turquia btn-lg" onclick="muestra_oculta('turquia');">Turquía</button>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                    <button type="button" class="btn-vietnam btn-lg" onclick="muestra_oculta('vietnam');">Vietnam</button>            
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 my-1">
+                    <button type="button" class="btn-Korea btn-lg" onclick="muestra_oculta('corea');">Corea</button>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-1 col-sm-12"></div>
+                <div class="col-lg-1 col-xl-7 col-md-6 col-sm-12 my-1">
+                    <button type="button" class="btn-taiwan btn-lg" onclick="muestra_oculta('taiwan') ;">Taiwan, Macao y Hong Kong</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="Footer" class="container-fluid media-body" style="width: 102%; left: -10px;"></div>
+        </div>
+        <script>
+        $("#Footer" ).load( "/views/templates/footer.html" );
+        </script>  
+    </body>
+</html>

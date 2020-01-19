@@ -1,4 +1,4 @@
 # Ignore everything in this directory
-
+.mp4
 # Except this file
 !.gitignore
