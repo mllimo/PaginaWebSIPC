@@ -1,6 +1,6 @@
 # Página E-SPORTS
 
-AÑADIR DESCRIPCIÓN
+Proyecto final de la asignatura SIPC
 
 ### Para los desarolladores
 
