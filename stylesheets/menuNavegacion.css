@@ -44,11 +44,7 @@
 
 /* Color de la barra */
 .topnav {
-<<<<<<< HEAD
     background-color:	rgb(0, 0, 0, 0.80);
-=======
-    background-color:	#A9A9A9;
->>>>>>> Contacto
     overflow: hidden;
     height: 7vh;
 }
@@ -73,12 +69,9 @@
         height: 100%;
         float: right;
     }
-<<<<<<< HEAD
 
 /* Comportamiento responsivo para pantallas pequeñas (450px)*/
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
-=======
->>>>>>> Contacto

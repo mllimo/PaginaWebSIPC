@@ -219,10 +219,6 @@ body {
     }
   }
 
-.relleno{
-    height: 800px;
-}
-
 #g2{
     max-height: 15rem;
 }
@@ -254,11 +250,6 @@ body {
 
 #carousel  .card:hover{
     margin-top: 5px;
-}
-
-lu{
-    list-style: none;
-    color: #bbb;
 }
 
     .section-format p {
