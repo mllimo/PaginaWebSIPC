@@ -1,6 +1,16 @@
 # Página E-SPORTS
+---
+Proyecto final de la asignatura SIPC  
+Universidad de La Laguna  
+Ingeniera informática  
+Segundo año  
+---
 
-Proyecto final de la asignatura SIPC
+# Miembros
+[@mllim0](https://github.com/mllim0)
+[@Padinsky](https://github.com/Padinsky)
+[@Werkre](https://github.com/werkre)
+
 
 ### Obervaciones
 
